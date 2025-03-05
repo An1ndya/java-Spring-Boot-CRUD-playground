@@ -7,7 +7,7 @@ This is a RESTful CRUD (Create, Read, Update, Delete) application built with Spr
 - Java 11
 - Spring Boot 2.7.14
 - Spring Data JPA (Hibernate)
-- H2 Database (in-memory)
+- MySQL
 - Maven
 - RESTful API
 
@@ -34,12 +34,51 @@ The project follows a standard layered architecture:
 
 ## Database
 
-The application uses H2 in-memory database which is initialized with sample data when the application starts.
+The application now uses MySQL database instead of H2.
 
-You can access the H2 console at: http://localhost:8080/h2-console
-- JDBC URL: `jdbc:h2:mem:testdb`
-- Username: `sa`
-- Password: `password`
+### MySQL Setup Instructions
+
+1. **Install MySQL Server**:
+   - Download and install MySQL Server from [MySQL official website](https://dev.mysql.com/downloads/mysql/)
+   - During installation, set up the root password (or leave it blank if you prefer)
+
+2. **Create the Database**:
+   - The application is configured to automatically create the database if it doesn't exist
+   - The database name is set to `employee_db` in the application.properties file
+
+3. **Configure Database Connection**:
+   - The default configuration in `application.properties` is:
+     ```
+     spring.datasource.url=jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+     spring.datasource.username=root
+     spring.datasource.password=
+     ```
+   - Update the username and password to match your MySQL installation if needed
+
+4. **Run the Application**:
+   - The application will automatically create the necessary tables using Hibernate's schema generation
+
+### Troubleshooting MySQL Connection
+
+If you encounter connection issues:
+
+1. Verify MySQL is running:
+   ```
+   mysql --version
+   ```
+
+2. Try connecting to MySQL from command line:
+   ```
+   mysql -u root -p
+   ```
+
+3. Check if you can create and access the database manually:
+   ```sql
+   CREATE DATABASE IF NOT EXISTS employee_db;
+   USE employee_db;
+   ```
+
+4. Ensure the credentials in application.properties match your MySQL installation
 
 ## API Endpoints
 
