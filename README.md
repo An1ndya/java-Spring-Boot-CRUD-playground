@@ -34,29 +34,41 @@ The project follows a standard layered architecture:
 
 ## Database
 
-The application now uses MySQL database instead of H2.
+The application uses MySQL database.
 
 ### MySQL Setup Instructions
 
 1. **Install MySQL Server**:
    - Download and install MySQL Server from [MySQL official website](https://dev.mysql.com/downloads/mysql/)
-   - During installation, set up the root password (or leave it blank if you prefer)
+   - During installation, set up the root password
 
 2. **Create the Database**:
    - The application is configured to automatically create the database if it doesn't exist
    - The database name is set to `employee_db` in the application.properties file
 
 3. **Configure Database Connection**:
-   - The default configuration in `application.properties` is:
+   - The current configuration in `application.properties` is:
      ```
-     spring.datasource.url=jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+     spring.datasource.url=jdbc:mysql://localhost:3307/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+     spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
      spring.datasource.username=root
-     spring.datasource.password=
+     spring.datasource.password=5678
+     spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
      ```
-   - Update the username and password to match your MySQL installation if needed
+   - Update the username, password, and port (if needed) to match your MySQL installation
 
-4. **Run the Application**:
+4. **Hibernate Configuration**:
+   - The application uses Hibernate ORM with the following settings:
+     ```
+     spring.jpa.show-sql=true
+     spring.jpa.hibernate.ddl-auto=update
+     spring.jpa.properties.hibernate.format_sql=true
+     ```
+   - The `update` mode automatically updates the database schema when entity classes change
+
+5. **Run the Application**:
    - The application will automatically create the necessary tables using Hibernate's schema generation
+   - Sample data will be initialized on first run through the `DataInitializer` class
 
 ### Troubleshooting MySQL Connection
 
@@ -78,7 +90,39 @@ If you encounter connection issues:
    USE employee_db;
    ```
 
-4. Ensure the credentials in application.properties match your MySQL installation
+4. Ensure the credentials and port in application.properties match your MySQL installation
+
+## Logging Configuration
+
+The application implements comprehensive logging with the following configuration:
+
+### Log Levels
+- Root level: INFO
+- Application package (`com.example.cruddemo`): DEBUG
+
+### Log Output
+- Console logging with timestamp, thread, level, logger name, and message
+- File logging to `logs/application.log` with the same pattern
+
+### Log Configuration in application.properties
+```
+logging.level.root=INFO
+logging.level.com.example.cruddemo=DEBUG
+logging.file.name=logs/application.log
+logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+```
+
+### Key Logging Points
+- Application startup and initialization
+- Database operations (through Hibernate SQL logging)
+- REST API request handling
+- Data initialization process
+- Error handling and exceptions
+
+### Accessing Logs
+- Console logs are visible in the terminal when running the application
+- File logs are stored in the `logs` directory at the root of the project
 
 ## API Endpoints
 
@@ -120,3 +164,5 @@ If you encounter connection issues:
   "salary": 85000.0
 }
 ```
+
+*Last updated: March 5, 2025*
