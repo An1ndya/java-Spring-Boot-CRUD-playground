@@ -2314,3 +2314,93 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'j
 2025-03-05 15:09:54 [http-nio-8080-exec-10] DEBUG c.e.c.s.impl.EmployeeServiceImpl - Fetching all employees
 2025-03-05 15:09:54 [http-nio-8080-exec-10] DEBUG c.e.c.s.impl.EmployeeServiceImpl - Found 4 employees
 2025-03-05 15:09:54 [http-nio-8080-exec-10] DEBUG c.e.c.controller.EmployeeController - Retrieved 4 employees
+2025-03-05 15:11:11 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-05 15:11:11 [main] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 19304 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-05 15:11:11 [main] DEBUG c.e.cruddemo.CrudDemoApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-03-05 15:11:11 [main] INFO  c.e.cruddemo.CrudDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-05 15:11:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-05 15:11:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2025-03-05 15:11:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-05 15:11:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:11:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-05 15:11:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-05 15:11:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-05 15:11:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 859 ms
+2025-03-05 15:11:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-05 15:11:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-05 15:11:12 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-05 15:11:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-05 15:11:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-05 15:11:12 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-05 15:11:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-05 15:11:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-05 15:11:13 [main] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-05 15:11:13 [main] INFO  c.e.c.s.impl.EmployeeServiceImpl - EmployeeServiceImpl initialized with repository
+2025-03-05 15:11:13 [main] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-05 15:11:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-05 15:11:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:11:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2025-03-05 15:11:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-05 15:11:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-05 15:11:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-05 15:11:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:11:13 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-05 15:11:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:11:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:11:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-05 15:11:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-03-05 15:11:48 [http-nio-8080-exec-6] INFO  c.e.c.controller.EmployeeController - REST request to get all employees
+2025-03-05 15:11:48 [http-nio-8080-exec-6] DEBUG c.e.c.s.impl.EmployeeServiceImpl - Fetching all employees
+2025-03-05 15:11:48 [http-nio-8080-exec-6] DEBUG c.e.c.s.impl.EmployeeServiceImpl - Found 4 employees
+2025-03-05 15:11:48 [http-nio-8080-exec-6] DEBUG c.e.c.controller.EmployeeController - Retrieved 4 employees
+2025-03-05 15:14:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-05 15:14:14 [main] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 10276 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-05 15:14:14 [main] DEBUG c.e.cruddemo.CrudDemoApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-03-05 15:14:14 [main] INFO  c.e.cruddemo.CrudDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-05 15:14:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-05 15:14:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2025-03-05 15:14:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-05 15:14:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:14:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-05 15:14:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-05 15:14:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-05 15:14:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 874 ms
+2025-03-05 15:14:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-05 15:14:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-05 15:14:15 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-05 15:14:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-05 15:14:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-05 15:14:16 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-05 15:14:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-05 15:14:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-05 15:14:16 [main] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-05 15:14:16 [main] INFO  c.e.c.s.impl.EmployeeServiceImpl - EmployeeServiceImpl initialized with repository
+2025-03-05 15:14:16 [main] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-05 15:14:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-05 15:14:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-05 15:14:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-05 15:14:16 [main] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 2.444 seconds (JVM running for 2.669)
+2025-03-05 15:14:16 [main] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-05 15:14:16 [main] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-05 15:14:29 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05 15:14:29 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-05 15:14:29 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-05 15:14:29 [http-nio-8080-exec-7] INFO  c.e.c.controller.EmployeeController - REST request to get all employees
+2025-03-05 15:14:29 [http-nio-8080-exec-7] DEBUG c.e.c.s.impl.EmployeeServiceImpl - Fetching all employees
+2025-03-05 15:14:29 [http-nio-8080-exec-7] DEBUG c.e.c.s.impl.EmployeeServiceImpl - Found 4 employees
+2025-03-05 15:14:29 [http-nio-8080-exec-7] DEBUG c.e.c.controller.EmployeeController - Retrieved 4 employees
