@@ -41,6 +41,12 @@ public class DataInitializer {
         return args -> {
             logger.info("Starting data initialization...");
             
+            // Check if data already exists
+            if (employeeRepository.count() > 0) {
+                logger.info("Data already exists, skipping initialization");
+                return;
+            }
+            
             // Create sample employees
             logger.debug("Creating sample employee 1");
             Employee emp1 = new Employee();
