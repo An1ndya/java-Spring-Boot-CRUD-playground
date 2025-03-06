@@ -3,6 +3,7 @@ package com.example.cruddemo.controller;
 import com.example.cruddemo.exception.ResourceNotFoundException;
 import com.example.cruddemo.model.Employee;
 import com.example.cruddemo.service.EmployeeService;
+import com.example.cruddemo.util.AppLogger;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -42,9 +43,8 @@ public class EmployeeController {
      */
     @GetMapping
     public ResponseEntity<List<Employee>> getAllEmployees() {
-        log.info("REST request to get all employees");
+        AppLogger.log1Info("Fetching all employees");
         List<Employee> employees = employeeService.getAllEmployees();
-        log.debug("Retrieved {} employees", employees.size());
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
@@ -56,8 +56,7 @@ public class EmployeeController {
      */
     @GetMapping("/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") Long employeeId) {
-        log.info("REST request to get Employee with id: {}", employeeId);
-        
+        AppLogger.log1Info("Fetching employee with ID: " + employeeId);
         Employee employee = employeeService.getEmployeeById(employeeId)
                 .orElseThrow(() -> {
                     log.error("Employee not found with id: {}", employeeId);
@@ -74,9 +73,9 @@ public class EmployeeController {
      */
     @PostMapping
     public ResponseEntity<Employee> createEmployee(@Valid @RequestBody Employee employee) {
-        log.info("REST request to create Employee: {}", employee.getEmail());
+        AppLogger.log1Info("Creating new employee: " + employee.getFirstName() + " " + employee.getLastName());
+        AppLogger.log2Info("Employee creation details: " + employee); // Log details to secondary log
         Employee savedEmployee = employeeService.createEmployee(employee);
-        log.debug("Created Employee with id: {}", savedEmployee.getId());
         return new ResponseEntity<>(savedEmployee, HttpStatus.CREATED);
     }
 
@@ -91,9 +90,9 @@ public class EmployeeController {
             @PathVariable(value = "id") Long employeeId,
             @Valid @RequestBody Employee employeeDetails) {
         
-        log.info("REST request to update Employee with id: {}", employeeId);
+        AppLogger.log1Info("Updating employee with ID: " + employeeId);
+        AppLogger.log2Info("Employee update details: " + employeeDetails); // Log details to secondary log
         Employee updatedEmployee = employeeService.updateEmployee(employeeId, employeeDetails);
-        log.debug("Updated Employee: {}", updatedEmployee.getId());
         return ResponseEntity.ok(updatedEmployee);
     }
 
@@ -104,13 +103,11 @@ public class EmployeeController {
      */
     @DeleteMapping("/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable(value = "id") Long employeeId) {
-        log.info("REST request to delete Employee with id: {}", employeeId);
-        
+        AppLogger.log1Info("Deleting employee with ID: " + employeeId);
         employeeService.deleteEmployee(employeeId);
         
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
-        log.debug("Deleted Employee with id: {}", employeeId);
         return ResponseEntity.ok(response);
     }
 
