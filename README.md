@@ -92,17 +92,47 @@ The logging configuration is defined in `src/main/resources/simple-logging-confi
 
 ### Running the Application
 
-1. Clone the repository
-2. Configure the database connection in `application.properties`
-3. Run the application using the PowerShell script:
+The application supports two different environments:
 
+#### Development Environment
+- Uses a separate test database (`employee_test_db`)
+- Runs on port 8081
+- Enhanced logging and debugging
+- Automatic schema creation with `create-drop` mode
+
+To run in development mode:
 ```
-.\start-application.ps1
+.\run-dev.ps1
+```
+Or manually:
+```
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
-The script will:
-1. Check and kill any processes using port 8080
-2. Start the application
+#### Production Environment
+- Uses the main database (`employee_db`)
+- Runs on port 8080
+- Minimal logging
+- Schema update mode
+
+To run in production mode:
+```
+.\run-prod.ps1
+```
+Or manually:
+```
+mvn spring-boot:run -Dspring-boot.run.profiles=prod
+```
+
+### Environment Configuration
+
+The application uses Spring profiles to load different configurations:
+
+- `application.properties` - Common settings shared across all environments
+- `application-dev.properties` - Development-specific settings
+- `application-prod.properties` - Production-specific settings
+
+You can customize these files to match your environment requirements.
 
 ## API Endpoints
 

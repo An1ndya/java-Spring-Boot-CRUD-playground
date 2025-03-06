@@ -254,3 +254,8 @@
 2025-03-06 14:24:29 [http-nio-8080-exec-3] INFO  log2 - Service: Found 4 employees
 2025-03-06 14:30:07 [http-nio-8080-exec-1] INFO  log2 - Service: Found 4 employees
 2025-03-06 14:30:08 [http-nio-8080-exec-3] INFO  log2 - Service: Found 4 employees
+2025-03-06 14:39:02 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:41:43 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:42:22 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-06 14:42:45 [http-nio-8080-exec-1] INFO  log2 - Service: Found 4 employees
+2025-03-06 14:42:53 [http-nio-8081-exec-1] INFO  log2 - Service: Found 3 employees
