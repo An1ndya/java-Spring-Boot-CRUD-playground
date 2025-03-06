@@ -4,8 +4,7 @@ import com.example.cruddemo.exception.ResourceNotFoundException;
 import com.example.cruddemo.model.Employee;
 import com.example.cruddemo.repository.EmployeeRepository;
 import com.example.cruddemo.service.EmployeeService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,10 +18,8 @@ import java.util.Optional;
  */
 @Service
 @Transactional
+@Slf4j
 public class EmployeeServiceImpl implements EmployeeService {
-
-    // Logger for this class
-    private static final Logger logger = LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
     // Repository dependency
     private final EmployeeRepository employeeRepository;
@@ -34,7 +31,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
-        logger.info("EmployeeServiceImpl initialized with repository");
+        log.info("EmployeeServiceImpl initialized with repository");
     }
 
     /**
@@ -43,9 +40,9 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public List<Employee> getAllEmployees() {
-        logger.debug("Fetching all employees");
+        log.debug("Fetching all employees");
         List<Employee> employees = employeeRepository.findAll();
-        logger.debug("Found {} employees", employees.size());
+        log.debug("Found {} employees", employees.size());
         return employees;
     }
 
@@ -56,12 +53,12 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public Optional<Employee> getEmployeeById(Long id) {
-        logger.debug("Fetching employee with id: {}", id);
+        log.debug("Fetching employee with id: {}", id);
         Optional<Employee> employee = employeeRepository.findById(id);
         if (employee.isPresent()) {
-            logger.debug("Found employee: {}", employee.get().getEmail());
+            log.debug("Found employee: {}", employee.get().getEmail());
         } else {
-            logger.debug("No employee found with id: {}", id);
+            log.debug("No employee found with id: {}", id);
         }
         return employee;
     }
@@ -73,9 +70,9 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public Employee createEmployee(Employee employee) {
-        logger.debug("Creating new employee with email: {}", employee.getEmail());
+        log.debug("Creating new employee with email: {}", employee.getEmail());
         Employee savedEmployee = employeeRepository.save(employee);
-        logger.info("Employee created successfully with id: {}", savedEmployee.getId());
+        log.info("Employee created successfully with id: {}", savedEmployee.getId());
         return savedEmployee;
     }
 
@@ -88,12 +85,12 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public Employee updateEmployee(Long id, Employee employeeDetails) {
-        logger.debug("Updating employee with id: {}", id);
+        log.debug("Updating employee with id: {}", id);
         
         // Find the employee by ID or throw exception if not found
         Employee employee = employeeRepository.findById(id)
                 .orElseThrow(() -> {
-                    logger.error("Failed to update - Employee not found with id: {}", id);
+                    log.error("Failed to update - Employee not found with id: {}", id);
                     return new ResourceNotFoundException("Employee not found with id: " + id);
                 });
         
@@ -107,7 +104,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         
         // Save and return the updated employee
         Employee updatedEmployee = employeeRepository.save(employee);
-        logger.info("Employee updated successfully: {}", updatedEmployee.getId());
+        log.info("Employee updated successfully: {}", updatedEmployee.getId());
         return updatedEmployee;
     }
 
@@ -118,18 +115,18 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public void deleteEmployee(Long id) {
-        logger.debug("Deleting employee with id: {}", id);
+        log.debug("Deleting employee with id: {}", id);
         
         // Find the employee by ID or throw exception if not found
         Employee employee = employeeRepository.findById(id)
                 .orElseThrow(() -> {
-                    logger.error("Failed to delete - Employee not found with id: {}", id);
+                    log.error("Failed to delete - Employee not found with id: {}", id);
                     return new ResourceNotFoundException("Employee not found with id: " + id);
                 });
         
         // Delete the employee
         employeeRepository.delete(employee);
-        logger.info("Employee deleted successfully with id: {}", id);
+        log.info("Employee deleted successfully with id: {}", id);
     }
 
     /**
@@ -139,9 +136,9 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public List<Employee> findByLastName(String lastName) {
-        logger.debug("Finding employees with last name: {}", lastName);
+        log.debug("Finding employees with last name: {}", lastName);
         List<Employee> employees = employeeRepository.findByLastName(lastName);
-        logger.debug("Found {} employees with last name: {}", employees.size(), lastName);
+        log.debug("Found {} employees with last name: {}", employees.size(), lastName);
         return employees;
     }
 
@@ -152,9 +149,9 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public List<Employee> findByPosition(String position) {
-        logger.debug("Finding employees with position: {}", position);
+        log.debug("Finding employees with position: {}", position);
         List<Employee> employees = employeeRepository.findByPosition(position);
-        logger.debug("Found {} employees with position: {}", employees.size(), position);
+        log.debug("Found {} employees with position: {}", employees.size(), position);
         return employees;
     }
 
@@ -165,12 +162,12 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public Employee findByEmail(String email) {
-        logger.debug("Finding employee with email: {}", email);
+        log.debug("Finding employee with email: {}", email);
         Employee employee = employeeRepository.findByEmail(email);
         if (employee != null) {
-            logger.debug("Found employee with id: {}", employee.getId());
+            log.debug("Found employee with id: {}", employee.getId());
         } else {
-            logger.debug("No employee found with email: {}", email);
+            log.debug("No employee found with email: {}", email);
         }
         return employee;
     }

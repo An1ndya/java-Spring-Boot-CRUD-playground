@@ -4,8 +4,6 @@ import com.example.cruddemo.exception.ResourceNotFoundException;
 import com.example.cruddemo.model.Employee;
 import com.example.cruddemo.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,10 +20,8 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/v1/employees")
+@Slf4j
 public class EmployeeController {
-
-    // Logger for this class
-    private static final Logger logger = LoggerFactory.getLogger(EmployeeController.class);
 
     // Service dependency
     private final EmployeeService employeeService;
@@ -37,7 +33,7 @@ public class EmployeeController {
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
-        logger.info("EmployeeController initialized with service");
+        log.info("EmployeeController initialized with service");
     }
 
     /**
@@ -46,9 +42,9 @@ public class EmployeeController {
      */
     @GetMapping
     public ResponseEntity<List<Employee>> getAllEmployees() {
-        logger.info("REST request to get all employees");
+        log.info("REST request to get all employees");
         List<Employee> employees = employeeService.getAllEmployees();
-        logger.debug("Retrieved {} employees", employees.size());
+        log.debug("Retrieved {} employees", employees.size());
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
@@ -60,11 +56,11 @@ public class EmployeeController {
      */
     @GetMapping("/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") Long employeeId) {
-        logger.info("REST request to get Employee with id: {}", employeeId);
+        log.info("REST request to get Employee with id: {}", employeeId);
         
         Employee employee = employeeService.getEmployeeById(employeeId)
                 .orElseThrow(() -> {
-                    logger.error("Employee not found with id: {}", employeeId);
+                    log.error("Employee not found with id: {}", employeeId);
                     return new ResourceNotFoundException("Employee not found with id: " + employeeId);
                 });
                 
@@ -78,9 +74,9 @@ public class EmployeeController {
      */
     @PostMapping
     public ResponseEntity<Employee> createEmployee(@Valid @RequestBody Employee employee) {
-        logger.info("REST request to create Employee: {}", employee.getEmail());
+        log.info("REST request to create Employee: {}", employee.getEmail());
         Employee savedEmployee = employeeService.createEmployee(employee);
-        logger.debug("Created Employee with id: {}", savedEmployee.getId());
+        log.debug("Created Employee with id: {}", savedEmployee.getId());
         return new ResponseEntity<>(savedEmployee, HttpStatus.CREATED);
     }
 
@@ -95,9 +91,9 @@ public class EmployeeController {
             @PathVariable(value = "id") Long employeeId,
             @Valid @RequestBody Employee employeeDetails) {
         
-        logger.info("REST request to update Employee with id: {}", employeeId);
+        log.info("REST request to update Employee with id: {}", employeeId);
         Employee updatedEmployee = employeeService.updateEmployee(employeeId, employeeDetails);
-        logger.debug("Updated Employee: {}", updatedEmployee.getId());
+        log.debug("Updated Employee: {}", updatedEmployee.getId());
         return ResponseEntity.ok(updatedEmployee);
     }
 
@@ -108,13 +104,13 @@ public class EmployeeController {
      */
     @DeleteMapping("/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable(value = "id") Long employeeId) {
-        logger.info("REST request to delete Employee with id: {}", employeeId);
+        log.info("REST request to delete Employee with id: {}", employeeId);
         
         employeeService.deleteEmployee(employeeId);
         
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
-        logger.debug("Deleted Employee with id: {}", employeeId);
+        log.debug("Deleted Employee with id: {}", employeeId);
         return ResponseEntity.ok(response);
     }
 
@@ -125,10 +121,10 @@ public class EmployeeController {
      */
     @GetMapping("/lastname/{lastName}")
     public ResponseEntity<List<Employee>> getEmployeesByLastName(@PathVariable String lastName) {
-        logger.info("REST request to get Employees by last name: {}", lastName);
+        log.info("REST request to get Employees by last name: {}", lastName);
         
         List<Employee> employees = employeeService.findByLastName(lastName);
-        logger.debug("Found {} employees with last name: {}", employees.size(), lastName);
+        log.debug("Found {} employees with last name: {}", employees.size(), lastName);
         return ResponseEntity.ok(employees);
     }
 
@@ -139,10 +135,10 @@ public class EmployeeController {
      */
     @GetMapping("/position/{position}")
     public ResponseEntity<List<Employee>> getEmployeesByPosition(@PathVariable String position) {
-        logger.info("REST request to get Employees by position: {}", position);
+        log.info("REST request to get Employees by position: {}", position);
         
         List<Employee> employees = employeeService.findByPosition(position);
-        logger.debug("Found {} employees with position: {}", employees.size(), position);
+        log.debug("Found {} employees with position: {}", employees.size(), position);
         return ResponseEntity.ok(employees);
     }
 
@@ -154,15 +150,15 @@ public class EmployeeController {
      */
     @GetMapping("/email/{email}")
     public ResponseEntity<Employee> getEmployeeByEmail(@PathVariable String email) {
-        logger.info("REST request to get Employee by email: {}", email);
+        log.info("REST request to get Employee by email: {}", email);
         
         Employee employee = employeeService.findByEmail(email);
         if (employee == null) {
-            logger.error("Employee not found with email: {}", email);
+            log.error("Employee not found with email: {}", email);
             throw new ResourceNotFoundException("Employee not found with email: " + email);
         }
         
-        logger.debug("Found Employee with id: {}", employee.getId());
+        log.debug("Found Employee with id: {}", employee.getId());
         return ResponseEntity.ok(employee);
     }
 }

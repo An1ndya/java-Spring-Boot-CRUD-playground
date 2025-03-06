@@ -2,8 +2,7 @@ package com.example.cruddemo.config;
 
 import com.example.cruddemo.model.Employee;
 import com.example.cruddemo.repository.EmployeeRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -14,10 +13,8 @@ import org.springframework.context.annotation.Configuration;
  * This class creates sample employees when the application starts.
  */
 @Configuration
+@Slf4j
 public class DataInitializer {
-
-    // Logger for this class
-    private static final Logger logger = LoggerFactory.getLogger(DataInitializer.class);
 
     // Repository dependency
     private final EmployeeRepository employeeRepository;
@@ -29,7 +26,7 @@ public class DataInitializer {
     @Autowired
     public DataInitializer(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
-        logger.info("DataInitializer initialized with repository");
+        log.info("DataInitializer initialized with repository");
     }
 
     /**
@@ -39,16 +36,16 @@ public class DataInitializer {
     @Bean
     CommandLineRunner initData() {
         return args -> {
-            logger.info("Starting data initialization...");
+            log.info("Starting data initialization...");
             
             // Check if data already exists
             if (employeeRepository.count() > 0) {
-                logger.info("Data already exists, skipping initialization");
+                log.info("Data already exists, skipping initialization");
                 return;
             }
             
             // Create sample employees
-            logger.debug("Creating sample employee 1");
+            log.debug("Creating sample employee 1");
             Employee emp1 = new Employee();
             emp1.setFirstName("John");
             emp1.setLastName("Doe");
@@ -58,7 +55,7 @@ public class DataInitializer {
             emp1.setSalary(75000.0);
             employeeRepository.save(emp1);
 
-            logger.debug("Creating sample employee 2");
+            log.debug("Creating sample employee 2");
             Employee emp2 = new Employee();
             emp2.setFirstName("Jane");
             emp2.setLastName("Smith");
@@ -68,7 +65,7 @@ public class DataInitializer {
             emp2.setSalary(85000.0);
             employeeRepository.save(emp2);
 
-            logger.debug("Creating sample employee 3");
+            log.debug("Creating sample employee 3");
             Employee emp3 = new Employee();
             emp3.setFirstName("Michael");
             emp3.setLastName("Johnson");
@@ -78,7 +75,7 @@ public class DataInitializer {
             emp3.setSalary(72000.0);
             employeeRepository.save(emp3);
 
-            logger.info("Sample data initialization completed successfully!");
+            log.info("Sample data initialization completed successfully!");
         };
     }
 }
