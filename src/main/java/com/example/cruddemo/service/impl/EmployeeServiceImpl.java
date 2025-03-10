@@ -10,6 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.ParameterMode;
+import javax.persistence.StoredProcedureQuery;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,15 +30,21 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     // Repository dependency
     private final EmployeeRepository employeeRepository;
+    
+    // Entity manager for stored procedure calls
+    private final EntityManager entityManager;
 
     /**
      * Constructor-based dependency injection
      * @param employeeRepository The repository for employee data access
+     * @param entityManager The entity manager for stored procedure execution
      */
     @Autowired
-    public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository, EntityManager entityManager) {
         this.employeeRepository = employeeRepository;
-        AppLogger.log1Info("EmployeeServiceImpl initialized with repository");
+        this.entityManager = entityManager;
+                
+        AppLogger.log1Info("EmployeeServiceImpl initialized with repository and entity manager");
     }
 
     /**
@@ -65,17 +77,107 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     /**
-     * Creates a new employee in the database
+     * Creates a new employee in the database using stored procedure
      * @param employee The employee entity to create
      * @return The created employee with generated ID
      */
     @Override
+    @Transactional
     public Employee createEmployee(Employee employee) {
-        AppLogger.log1Info("Service: Creating new employee: " + employee.getFirstName() + " " + employee.getLastName());
-        AppLogger.log2Info("Service: Employee creation details: " + employee); // More detailed log in secondary log
-        Employee savedEmployee = employeeRepository.save(employee);
-        AppLogger.log1Info("Service: Employee created successfully with id: {}", savedEmployee.getId());
-        return savedEmployee;
+        AppLogger.log1Info("Service: Attempting to create new employee: {} {}", employee.getFirstName(), employee.getLastName());
+        AppLogger.log2Info("Service: Full employee details: {}", employee);
+        
+        try {
+            // Validate input
+            validateEmployeeInput(employee);
+            
+            StoredProcedureQuery query = entityManager.createStoredProcedureQuery("CreateEmployee")
+                    .registerStoredProcedureParameter("firstName", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("lastName", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("email", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("phoneNumber", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("position", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("salary", BigDecimal.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("newId", Integer.class, ParameterMode.OUT)
+                    .setParameter("firstName", employee.getFirstName())
+                    .setParameter("lastName", employee.getLastName())
+                    .setParameter("email", employee.getEmail())
+                    .setParameter("phoneNumber", employee.getPhoneNumber())
+                    .setParameter("position", employee.getPosition())
+                    .setParameter("salary", BigDecimal.valueOf(employee.getSalary()));
+            
+            // Execute the stored procedure
+            query.execute();
+            
+            // Retrieve the generated ID
+            Object newIdObj = query.getOutputParameterValue("newId");
+            
+            if (newIdObj == null) {
+                throw new RuntimeException("Failed to generate employee ID");
+            }
+            
+            if (!(newIdObj instanceof Integer)) {
+                throw new RuntimeException("Generated ID is not of type Integer. Actual type: " + 
+                    (newIdObj != null ? newIdObj.getClass().getName() : "null"));
+            }
+            
+            Integer id = (Integer) newIdObj;
+            employee.setId(id.longValue());
+            
+            AppLogger.log1Info("Service: Employee created successfully with ID: {}", id);
+            return employee;
+        } catch (Exception e) {
+            AppLogger.log1Error("Error creating employee: {}", e.getMessage());
+            
+            // Detailed error logging
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            e.printStackTrace(pw);
+            AppLogger.log2Error("Detailed error trace: {}", sw.toString());
+            
+            throw new RuntimeException("Failed to create employee: " + e.getMessage(), e);
+        }
+    }
+    
+    /**
+     * Validates employee input before creating
+     * @param employee The employee to validate
+     * @throws IllegalArgumentException if validation fails
+     */
+    private void validateEmployeeInput(Employee employee) {
+        if (employee == null) {
+            throw new IllegalArgumentException("Employee cannot be null");
+        }
+        
+        // First Name validation
+        if (employee.getFirstName() == null || employee.getFirstName().trim().isEmpty()) {
+            throw new IllegalArgumentException("First name is required");
+        }
+        
+        // Last Name validation
+        if (employee.getLastName() == null || employee.getLastName().trim().isEmpty()) {
+            throw new IllegalArgumentException("Last name is required");
+        }
+        
+        // Email validation
+        if (employee.getEmail() == null || !isValidEmail(employee.getEmail())) {
+            throw new IllegalArgumentException("Invalid email address");
+        }
+        
+        // Salary validation
+        if (employee.getSalary() != null && employee.getSalary() < 0) {
+            throw new IllegalArgumentException("Salary cannot be negative");
+        }
+    }
+    
+    /**
+     * Basic email validation
+     * @param email Email to validate
+     * @return true if email is valid, false otherwise
+     */
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        return email != null && email.matches(emailRegex);
     }
 
     /**

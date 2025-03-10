@@ -1,0 +1,28 @@
+2025-03-09 12:26:15 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-09 12:26:26 [http-nio-8080-exec-1] INFO  log2 - Service: Found 4 employees
+2025-03-09 12:33:04 [http-nio-8080-exec-2] INFO  log2 - Service: Found 4 employees
+2025-03-09 12:33:05 [http-nio-8080-exec-5] INFO  log2 - Service: Found 4 employees
+2025-03-09 12:48:30 [http-nio-8080-exec-8] INFO  log2 - Service: Found 4 employees
+2025-03-09 12:48:37 [http-nio-8080-exec-6] INFO  log2 - Service: Found employee: anindya@gmail.com
+2025-03-09 12:50:19 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindya@gmail2.com, phoneNumber=01721584048, position=AI, salary=37000.0)
+2025-03-09 12:50:19 [http-nio-8080-exec-1] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindya@gmail2.com, phoneNumber=01721584048, position=AI, salary=37000.0)
+2025-03-09 12:50:19 [http-nio-8080-exec-1] INFO  log2 - Service: Falling back to repository save
+2025-03-09 12:50:40 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-09 12:51:11 [http-nio-8080-exec-2] INFO  log2 - Service: Found 5 employees
+2025-03-09 12:51:13 [http-nio-8080-exec-5] INFO  log2 - Service: Found 5 employees
+2025-03-09 12:55:44 [http-nio-8080-exec-8] INFO  log2 - Service: Found 5 employees
+2025-03-09 13:11:52 [http-nio-8080-exec-10] INFO  log2 - Service: Found 5 employees
+2025-03-09 13:11:53 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-09 13:35:04 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-09 14:21:48 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-09 14:22:09 [http-nio-8080-exec-5] INFO  log2 - Service: Found 5 employees
+2025-03-09 14:22:10 [http-nio-8080-exec-9] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:24:13 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:26:01 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-09 15:27:06 [http-nio-8080-exec-2] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:27:07 [http-nio-8080-exec-6] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:27:08 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:38:43 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-09 15:38:50 [http-nio-8080-exec-1] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:38:58 [http-nio-8080-exec-4] INFO  log2 - Service: Found 5 employees
+2025-03-09 15:38:59 [http-nio-8080-exec-2] INFO  log2 - Service: Found 5 employees

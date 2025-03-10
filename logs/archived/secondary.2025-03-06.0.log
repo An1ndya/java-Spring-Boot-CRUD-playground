@@ -1,0 +1,274 @@
+2025-03-06 10:37:02 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 10:37:02 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 10:37:02 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 10:37:02 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 10:37:02 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 10:37:15 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 10:37:15 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 10:37:15 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 10:37:15 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 10:37:15 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 10:39:46 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 10:39:46 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 10:39:46 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 10:39:46 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 10:39:46 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 10:39:48 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 10:39:48 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 10:39:48 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 10:39:48 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 10:39:48 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 10:39:59 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 10:39:59 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 10:39:59 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 10:39:59 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 10:39:59 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 10:41:34 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 10:41:34 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 10:41:34 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 10:41:34 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 10:41:34 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 11:34:05 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 11:34:05 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 11:34:05 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 11:34:05 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 11:34:05 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 11:34:44 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 11:34:44 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 11:34:44 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 11:34:44 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 11:34:44 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 11:45:41 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 11:45:41 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 11:45:41 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 11:45:41 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 11:45:41 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 11:46:24 [restartedMain] INFO  SecondaryLogger - SECONDARY LOG: This message goes to secondary.log
+2025-03-06 11:46:24 [restartedMain] INFO  SecondaryLogger - DYNAMIC LOG: Dynamic logging example
+2025-03-06 11:46:24 [restartedMain] INFO  SecondaryLogger - INFO: Testing different log levels
+2025-03-06 11:46:24 [restartedMain] WARN  SecondaryLogger - WARN: Testing different log levels
+2025-03-06 11:46:24 [restartedMain] ERROR SecondaryLogger - ERROR: Testing different log levels
+2025-03-06 11:47:09 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 11:47:09 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 11:47:09 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 11:52:05 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 11:52:05 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 11:52:05 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:02:21 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 12:02:21 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:02:21 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:02:33 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 12:02:33 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:02:33 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:02:45 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 12:02:45 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:02:45 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:04:19 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 12:04:19 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:04:19 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:07:36 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:07:36 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:07:36 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:07:36 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:07:36 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:07:36 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:10:46 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:10:46 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:10:46 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:10:46 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:10:46 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:10:46 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:10:48 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:10:48 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:10:48 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:10:48 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:10:48 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:10:48 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:11:00 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:11:00 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:11:00 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:11:00 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:11:00 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:11:00 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:11:34 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:11:34 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:11:34 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:11:34 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:11:34 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:11:34 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:12:38 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:12:38 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:12:38 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:12:38 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:12:38 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:12:38 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:14:20 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:14:20 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:14:20 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:14:20 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:14:20 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:14:20 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:15:08 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:15:08 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:15:08 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:15:08 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:15:08 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:15:08 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:20:35 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:20:35 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:20:35 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:20:35 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:20:35 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:20:35 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:20:41 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:20:41 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:20:41 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:20:41 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:20:41 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:20:41 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:20:48 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:20:48 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:20:48 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:20:48 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:20:48 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:20:48 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:21:59 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:21:59 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:21:59 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:21:59 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:21:59 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:21:59 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:24:17 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:24:17 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:24:17 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:24:17 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:24:17 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:24:17 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:51:29 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:51:29 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:51:29 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:51:29 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:51:29 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:51:29 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:51:42 [restartedMain] INFO  log2 - Direct usage of log2 - goes to secondary.log
+2025-03-06 12:51:42 [restartedMain] INFO  log2 - INFO message to log2
+2025-03-06 12:51:42 [restartedMain] WARN  log2 - WARNING message to log2
+2025-03-06 12:51:42 [restartedMain] ERROR log2 - ERROR message to log2
+2025-03-06 12:51:42 [restartedMain] INFO  log2 - Using LoggerUtil - log2
+2025-03-06 12:51:42 [restartedMain] INFO  log2 - Conditional logging to log2
+2025-03-06 12:51:42 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:51:42 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:51:42 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:51:42 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:51:53 [restartedMain] INFO  log2 - Direct usage of log2 - goes to secondary.log
+2025-03-06 12:51:53 [restartedMain] INFO  log2 - INFO message to log2
+2025-03-06 12:51:53 [restartedMain] WARN  log2 - WARNING message to log2
+2025-03-06 12:51:53 [restartedMain] ERROR log2 - ERROR message to log2
+2025-03-06 12:51:53 [restartedMain] INFO  log2 - Using LoggerUtil - log2
+2025-03-06 12:51:53 [restartedMain] INFO  log2 - Conditional logging to log2
+2025-03-06 12:51:53 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:51:53 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:51:53 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:51:53 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - Direct usage of log2 - goes to secondary.log
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - INFO message to log2
+2025-03-06 12:52:10 [restartedMain] WARN  log2 - WARNING message to log2
+2025-03-06 12:52:10 [restartedMain] ERROR log2 - ERROR message to log2
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - LOG2: Message to both log files
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - LOG2 INFO: Testing all log levels
+2025-03-06 12:52:10 [restartedMain] WARN  log2 - LOG2 WARN: Testing all log levels
+2025-03-06 12:52:10 [restartedMain] ERROR log2 - LOG2 ERROR: Testing all log levels
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - Conditional log message
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - Using LoggerUtil - log2
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - Conditional logging to log2
+2025-03-06 12:52:10 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:54:53 [restartedMain] INFO  log2 - Direct usage of LoggerUtil - log2
+2025-03-06 12:54:53 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 12:54:53 [restartedMain] INFO  log2 - Using LoggingExample to log to file 2
+2025-03-06 12:54:53 [restartedMain] INFO  log2 - INFO: Testing different log levels
+2025-03-06 12:54:53 [restartedMain] WARN  log2 - WARN: Testing different log levels
+2025-03-06 12:54:53 [restartedMain] ERROR log2 - ERROR: Testing different log levels
+2025-03-06 12:56:49 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:56:49 [restartedMain] WARN  log2 - Warning message to secondary.log
+2025-03-06 12:56:49 [restartedMain] ERROR log2 - Error message to secondary.log
+2025-03-06 12:56:49 [restartedMain] INFO  log2 - Conditional message to secondary.log
+2025-03-06 12:57:14 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:57:14 [restartedMain] WARN  log2 - Warning message to secondary.log
+2025-03-06 12:57:14 [restartedMain] ERROR log2 - Error message to secondary.log
+2025-03-06 12:57:14 [restartedMain] INFO  log2 - Conditional message to secondary.log
+2025-03-06 12:57:24 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:57:24 [restartedMain] INFO  log2 - INFO: Testing minimal logging approach
+2025-03-06 12:57:24 [restartedMain] WARN  log2 - WARN: Testing minimal logging approach
+2025-03-06 12:57:24 [restartedMain] ERROR log2 - ERROR: Testing minimal logging approach
+2025-03-06 12:57:24 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:59:48 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:59:48 [restartedMain] INFO  log2 - INFO: Testing minimal logging approach
+2025-03-06 12:59:48 [restartedMain] WARN  log2 - WARN: Testing minimal logging approach
+2025-03-06 12:59:48 [restartedMain] ERROR log2 - ERROR: Testing minimal logging approach
+2025-03-06 12:59:48 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:59:59 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 12:59:59 [restartedMain] INFO  log2 - INFO: Testing minimal logging approach
+2025-03-06 12:59:59 [restartedMain] WARN  log2 - WARN: Testing minimal logging approach
+2025-03-06 12:59:59 [restartedMain] ERROR log2 - ERROR: Testing minimal logging approach
+2025-03-06 12:59:59 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:11 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:11 [restartedMain] INFO  log2 - INFO: Testing minimal logging approach
+2025-03-06 14:14:11 [restartedMain] WARN  log2 - WARN: Testing minimal logging approach
+2025-03-06 14:14:11 [restartedMain] ERROR log2 - ERROR: Testing minimal logging approach
+2025-03-06 14:14:11 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:18 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:18 [restartedMain] INFO  log2 - INFO: Testing minimal logging approach
+2025-03-06 14:14:18 [restartedMain] WARN  log2 - WARN: Testing minimal logging approach
+2025-03-06 14:14:18 [restartedMain] ERROR log2 - ERROR: Testing minimal logging approach
+2025-03-06 14:14:18 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:25 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:25 [restartedMain] INFO  log2 - INFO: Testing minimal logging approach
+2025-03-06 14:14:25 [restartedMain] WARN  log2 - WARN: Testing minimal logging approach
+2025-03-06 14:14:25 [restartedMain] ERROR log2 - ERROR: Testing minimal logging approach
+2025-03-06 14:14:25 [restartedMain] INFO  log2 - This goes to secondary.log
+2025-03-06 14:14:57 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 14:14:57 [restartedMain] WARN  log2 - Warning message to secondary.log
+2025-03-06 14:14:57 [restartedMain] ERROR log2 - Error message to secondary.log
+2025-03-06 14:14:57 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 14:15:15 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 14:15:15 [restartedMain] WARN  log2 - Warning message to secondary.log
+2025-03-06 14:15:15 [restartedMain] ERROR log2 - Error message to secondary.log
+2025-03-06 14:15:15 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 14:15:38 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 14:15:38 [restartedMain] WARN  log2 - Warning message to secondary.log
+2025-03-06 14:15:38 [restartedMain] ERROR log2 - Error message to secondary.log
+2025-03-06 14:15:38 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 14:16:05 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 14:16:05 [restartedMain] WARN  log2 - Warning message to secondary.log
+2025-03-06 14:16:05 [restartedMain] ERROR log2 - Error message to secondary.log
+2025-03-06 14:16:05 [restartedMain] INFO  log2 - This message will go to secondary.log
+2025-03-06 14:16:16 [restartedMain] INFO  log2 - This message goes to secondary.log
+2025-03-06 14:16:16 [restartedMain] INFO  log2 - LoggingDemo: Basic logging to secondary.log
+2025-03-06 14:16:16 [restartedMain] WARN  log2 - LoggingDemo: Warning message to secondary.log
+2025-03-06 14:16:16 [restartedMain] ERROR log2 - LoggingDemo: Error message to secondary.log
+2025-03-06 14:16:16 [restartedMain] INFO  log2 - LoggingDemo: This message goes to secondary.log
+2025-03-06 14:16:16 [restartedMain] WARN  log2 - LoggingDemo: Warning message to secondary.log
+2025-03-06 14:16:16 [restartedMain] ERROR log2 - LoggingDemo: Error message to secondary.log
+2025-03-06 14:16:16 [restartedMain] INFO  log2 - LoggingDemo: Detailed data processing: Sample data for logging demonstration
+2025-03-06 14:24:25 [http-nio-8080-exec-1] INFO  log2 - Service: Found employee: john.doe@example.com
+2025-03-06 14:24:29 [http-nio-8080-exec-3] INFO  log2 - Service: Found 4 employees
+2025-03-06 14:30:07 [http-nio-8080-exec-1] INFO  log2 - Service: Found 4 employees
+2025-03-06 14:30:08 [http-nio-8080-exec-3] INFO  log2 - Service: Found 4 employees
+2025-03-06 14:39:02 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:41:43 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:42:22 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-06 14:42:45 [http-nio-8080-exec-1] INFO  log2 - Service: Found 4 employees
+2025-03-06 14:42:53 [http-nio-8081-exec-1] INFO  log2 - Service: Found 3 employees
+2025-03-06 14:52:02 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:52:13 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:52:50 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:53:14 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:53:25 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:53:33 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 14:54:05 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 15:07:01 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 15:19:01 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 15:19:56 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 15:51:03 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 15:53:52 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-06 15:54:29 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
