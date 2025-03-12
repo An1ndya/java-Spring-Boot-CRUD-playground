@@ -734,3 +734,6 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'j
 2025-03-10 13:49:54 [http-nio-8080-exec-10] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
 2025-03-10 13:50:00 [http-nio-8080-exec-9] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
 2025-03-10 13:50:00 [http-nio-8080-exec-9] INFO  log2 - Service: Updated employee details: Employee(id=17, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 15:10:36 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 15:36:05 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 15:36:08 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
