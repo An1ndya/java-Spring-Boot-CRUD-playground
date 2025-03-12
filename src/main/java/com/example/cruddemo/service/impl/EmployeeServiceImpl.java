@@ -93,41 +93,27 @@ public class EmployeeServiceImpl implements EmployeeService {
             // Validate input
             validateEmployeeInput(employee);
             
-            StoredProcedureQuery query = entityManager.createStoredProcedureQuery("CreateEmployee")
-                    .registerStoredProcedureParameter("firstName", String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter("lastName", String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter("email", String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter("phoneNumber", String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter("position", String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter("salary", BigDecimal.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter("newId", Integer.class, ParameterMode.OUT)
-                    .setParameter("firstName", employee.getFirstName())
-                    .setParameter("lastName", employee.getLastName())
-                    .setParameter("email", employee.getEmail())
-                    .setParameter("phoneNumber", employee.getPhoneNumber())
-                    .setParameter("position", employee.getPosition())
-                    .setParameter("salary", BigDecimal.valueOf(employee.getSalary()));
+            StoredProcedureQuery query = entityManager.createStoredProcedureQuery("sp_insert_employee", Employee.class)
+                    .registerStoredProcedureParameter("first_name_param", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("last_name_param", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("email_param", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("phone_number_param", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("position_param", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("salary_param", BigDecimal.class, ParameterMode.IN)
+                    .setParameter("first_name_param", employee.getFirstName())
+                    .setParameter("last_name_param", employee.getLastName())
+                    .setParameter("email_param", employee.getEmail())
+                    .setParameter("phone_number_param", employee.getPhoneNumber())
+                    .setParameter("position_param", employee.getPosition())
+                    .setParameter("salary_param", BigDecimal.valueOf(employee.getSalary()));
             
             // Execute the stored procedure
             query.execute();
             
-            // Retrieve the generated ID
-            Object newIdObj = query.getOutputParameterValue("newId");
+            // Retrieve the inserted employee
+            Employee insertedEmployee = (Employee) query.getSingleResult();
             
-            if (newIdObj == null) {
-                throw new RuntimeException("Failed to generate employee ID");
-            }
-            
-            if (!(newIdObj instanceof Integer)) {
-                throw new Exception("Generated ID is not of type Integer. Actual type: " + 
-                    (newIdObj != null ? newIdObj.getClass().getName() : "null"));
-            }
-            
-            Integer id = (Integer) newIdObj;
-            employee.setId(id.longValue());
-            
-            AppLogger.log1Info("Service: Employee created successfully with ID: {}", id);
-            return employee;
+            return insertedEmployee;
         } catch (RuntimeException e) {
             AppLogger.log1Error("Error creating employee: {}", e.getMessage());
             
