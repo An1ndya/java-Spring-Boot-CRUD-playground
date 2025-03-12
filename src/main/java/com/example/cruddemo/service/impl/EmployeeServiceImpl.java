@@ -13,6 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
+
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.math.BigDecimal;
@@ -117,7 +119,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             }
             
             if (!(newIdObj instanceof Integer)) {
-                throw new RuntimeException("Generated ID is not of type Integer. Actual type: " + 
+                throw new Exception("Generated ID is not of type Integer. Actual type: " + 
                     (newIdObj != null ? newIdObj.getClass().getName() : "null"));
             }
             
@@ -126,7 +128,18 @@ public class EmployeeServiceImpl implements EmployeeService {
             
             AppLogger.log1Info("Service: Employee created successfully with ID: {}", id);
             return employee;
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
+            AppLogger.log1Error("Error creating employee: {}", e.getMessage());
+            
+            // Detailed error logging
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            e.printStackTrace(pw);
+            AppLogger.log2Error("Detailed error trace: {}", sw.toString());
+            
+            throw new RuntimeException("Failed to create employee: " + e.getMessage(), e);
+        }
+        catch (Exception e) {
             AppLogger.log1Error("Error creating employee: {}", e.getMessage());
             
             // Detailed error logging

@@ -1,0 +1,739 @@
+2025-03-10 10:43:08 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-10 10:43:26 [http-nio-8080-exec-1] INFO  log2 - Service: Found 5 employees
+2025-03-10 10:48:44 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-10 10:48:49 [http-nio-8080-exec-2] INFO  log2 - Service: Found 5 employees
+2025-03-10 10:48:51 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-10 10:49:29 [http-nio-8080-exec-6] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 10:49:29 [http-nio-8080-exec-6] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 10:49:42 [http-nio-8080-exec-1] INFO  log2 - Service: Found 5 employees
+2025-03-10 10:49:44 [http-nio-8080-exec-5] INFO  log2 - Service: Found 5 employees
+2025-03-10 10:49:44 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-10 10:50:19 [http-nio-8080-exec-10] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 10:50:19 [http-nio-8080-exec-10] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 11:39:30 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:09:04 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-10 12:09:09 [http-nio-8080-exec-1] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:09:10 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:09:15 [http-nio-8080-exec-4] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:09:15 [http-nio-8080-exec-4] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:22:17 [http-nio-8080-exec-7] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:22:17 [http-nio-8080-exec-7] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:22:29 [http-nio-8080-exec-8] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:22:30 [http-nio-8080-exec-9] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:22:31 [http-nio-8080-exec-10] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:24:22 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:35:55 [http-nio-8080-exec-4] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:36:03 [http-nio-8080-exec-5] INFO  log2 - Service: Found employee: jane.smith@example.com
+2025-03-10 12:41:00 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:41:01 [http-nio-8080-exec-8] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:41:02 [http-nio-8080-exec-9] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:41:09 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:09 [http-nio-8080-exec-1] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:11 [http-nio-8080-exec-2] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:11 [http-nio-8080-exec-2] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:12 [http-nio-8080-exec-4] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:12 [http-nio-8080-exec-4] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:13 [http-nio-8080-exec-7] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:41:13 [http-nio-8080-exec-7] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:42:09 [http-nio-8080-exec-9] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:42:10 [http-nio-8080-exec-10] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:42:11 [http-nio-8080-exec-1] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:43:30 [http-nio-8080-exec-4] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:43:30 [http-nio-8080-exec-4] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:44:59 [http-nio-8080-exec-6] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:44:59 [http-nio-8080-exec-6] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:47:12 [http-nio-8080-exec-7] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:47:12 [http-nio-8080-exec-7] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:48:51 [http-nio-8080-exec-8] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:48:52 [http-nio-8080-exec-9] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:48:56 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:48:56 [http-nio-8080-exec-1] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:49:55 [http-nio-8080-exec-2] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:49:55 [http-nio-8080-exec-2] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:51:28 [http-nio-8080-exec-4] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:51:28 [http-nio-8080-exec-4] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:51:30 [http-nio-8080-exec-6] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:51:30 [http-nio-8080-exec-6] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:51:31 [http-nio-8080-exec-9] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:51:31 [http-nio-8080-exec-9] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:52:40 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:52:40 [http-nio-8080-exec-1] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:52:42 [http-nio-8080-exec-2] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:52:42 [http-nio-8080-exec-2] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:53:31 [http-nio-8080-exec-5] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:53:31 [http-nio-8080-exec-5] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:53:43 [http-nio-8080-exec-7] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:53:43 [http-nio-8080-exec-7] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 12:53:48 [http-nio-8080-exec-6] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:53:50 [http-nio-8080-exec-8] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:56:31 [http-nio-8080-exec-10] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:56:32 [http-nio-8080-exec-1] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:56:33 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-10 12:56:40 [http-nio-8080-exec-2] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:56:40 [http-nio-8080-exec-2] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:58:47 [http-nio-8080-exec-4] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 12:58:47 [http-nio-8080-exec-4] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:00:00 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:00:03 [http-nio-8080-exec-8] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:00:03 [http-nio-8080-exec-8] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:00:05 [http-nio-8080-exec-9] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:00:05 [http-nio-8080-exec-9] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:00:45 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:00:45 [http-nio-8080-exec-1] INFO  log2 - Service: Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:03:42 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - First Name: John
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Last Name: Doe
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Email: john.doe@example.com
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Phone Number: 123-456-7890
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Position: Software Engineer
+2025-03-10 13:04:05 [http-nio-8080-exec-1] INFO  log2 - Salary: 75000.0
+2025-03-10 13:04:05 [http-nio-8080-exec-1] ERROR log2 - Detailed error:
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:624)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl.createEmployee(EmployeeServiceImpl.java:119)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$89df4e8e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$bd9dae69.createEmployee(<generated>)
+	at com.example.cruddemo.controller.EmployeeController.createEmployee(EmployeeController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.result.internal.OutputsImpl.convert(OutputsImpl.java:83)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:60)
+	at org.hibernate.procedure.internal.ProcedureOutputsImpl.<init>(ProcedureOutputsImpl.java:34)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.buildOutputs(ProcedureCallImpl.java:418)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.getOutputs(ProcedureCallImpl.java:354)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.outputs(ProcedureCallImpl.java:634)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:617)
+	... 64 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'john.doe@example.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.mysql.cj.jdbc.CallableStatement.execute(CallableStatement.java:847)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:56)
+	... 69 common frames omitted
+2025-03-10 13:04:05 [http-nio-8080-exec-1] ERROR log2 - Full stack trace: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:624)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl.createEmployee(EmployeeServiceImpl.java:119)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$89df4e8e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$bd9dae69.createEmployee(<generated>)
+	at com.example.cruddemo.controller.EmployeeController.createEmployee(EmployeeController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.result.internal.OutputsImpl.convert(OutputsImpl.java:83)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:60)
+	at org.hibernate.procedure.internal.ProcedureOutputsImpl.<init>(ProcedureOutputsImpl.java:34)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.buildOutputs(ProcedureCallImpl.java:418)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.getOutputs(ProcedureCallImpl.java:354)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.outputs(ProcedureCallImpl.java:634)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:617)
+	... 64 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'john.doe@example.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.mysql.cj.jdbc.CallableStatement.execute(CallableStatement.java:847)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:56)
+	... 69 more
+
+2025-03-10 13:04:30 [http-nio-8080-exec-3] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:04:31 [http-nio-8080-exec-2] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:10:25 [http-nio-8080-exec-5] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:10:27 [http-nio-8080-exec-6] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:10:31 [http-nio-8080-exec-7] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:10:32 [http-nio-8080-exec-8] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:10:36 [http-nio-8080-exec-4] INFO  log2 - Service: Found 5 employees
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - First Name: Anindya
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Last Name: Biswas
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Email: anindyaSpringBoot@gmail.com
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Phone Number: 01721584048
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Position: Java
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Salary: 37000.0
+2025-03-10 13:11:08 [http-nio-8080-exec-3] INFO  log2 - Generated ID from stored procedure: 15
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot2@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot2@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - First Name: Anindya
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Last Name: Biswas
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Email: anindyaSpringBoot2@gmail.com
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Phone Number: 01721584048
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Position: Java
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Salary: 37000.0
+2025-03-10 13:12:47 [http-nio-8080-exec-5] INFO  log2 - Generated ID from stored procedure: 16
+2025-03-10 13:13:13 [http-nio-8080-exec-7] INFO  log2 - Service: Found 7 employees
+2025-03-10 13:13:28 [http-nio-8080-exec-8] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot3@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:13:28 [http-nio-8080-exec-8] INFO  log2 - Service: Updated employee details: Employee(id=16, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot3@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:13:37 [http-nio-8080-exec-4] INFO  log2 - Service: Found 7 employees
+2025-03-10 13:37:13 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 13:37:25 [http-nio-8081-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:37:25 [http-nio-8081-exec-1] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:37:25 [http-nio-8081-exec-1] ERROR log2 - Detailed error trace: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:624)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl.createEmployee(EmployeeServiceImpl.java:109)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$89df4e8e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$53add2b6.createEmployee(<generated>)
+	at com.example.cruddemo.controller.EmployeeController.createEmployee(EmployeeController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.result.internal.OutputsImpl.convert(OutputsImpl.java:83)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:60)
+	at org.hibernate.procedure.internal.ProcedureOutputsImpl.<init>(ProcedureOutputsImpl.java:34)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.buildOutputs(ProcedureCallImpl.java:418)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.getOutputs(ProcedureCallImpl.java:354)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.outputs(ProcedureCallImpl.java:634)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:617)
+	... 64 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'john.doe@example.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.mysql.cj.jdbc.CallableStatement.execute(CallableStatement.java:847)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:56)
+	... 69 more
+
+2025-03-10 13:39:02 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 13:40:01 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 13:40:16 [http-nio-8081-exec-3] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:40:17 [http-nio-8081-exec-3] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:40:17 [http-nio-8081-exec-3] ERROR log2 - Detailed error trace: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:624)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl.createEmployee(EmployeeServiceImpl.java:110)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$89df4e8e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$53add2b6.createEmployee(<generated>)
+	at com.example.cruddemo.controller.EmployeeController.createEmployee(EmployeeController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.result.internal.OutputsImpl.convert(OutputsImpl.java:83)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:60)
+	at org.hibernate.procedure.internal.ProcedureOutputsImpl.<init>(ProcedureOutputsImpl.java:34)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.buildOutputs(ProcedureCallImpl.java:418)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.getOutputs(ProcedureCallImpl.java:354)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.outputs(ProcedureCallImpl.java:634)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:617)
+	... 64 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'john.doe@example.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.mysql.cj.jdbc.CallableStatement.execute(CallableStatement.java:847)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:56)
+	... 69 more
+
+2025-03-10 13:40:27 [http-nio-8081-exec-1] INFO  log2 - Service: Found 3 employees
+2025-03-10 13:40:28 [http-nio-8081-exec-2] INFO  log2 - Service: Found 3 employees
+2025-03-10 13:40:30 [http-nio-8080-exec-3] INFO  log2 - Service: Found 7 employees
+2025-03-10 13:40:31 [http-nio-8080-exec-2] INFO  log2 - Service: Found 7 employees
+2025-03-10 13:41:06 [http-nio-8081-exec-7] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot3@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:41:06 [http-nio-8081-exec-7] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot3@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:41:12 [http-nio-8081-exec-4] INFO  log2 - Service: Found 4 employees
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot2@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot2@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - First Name: Anindya
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Last Name: Biswas
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Email: anindyaSpringBoot2@gmail.com
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Phone Number: 01721584048
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Position: Java
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Salary: 37000.0
+2025-03-10 13:41:47 [http-nio-8080-exec-5] INFO  log2 - Generated ID from stored procedure: 17
+2025-03-10 13:41:52 [http-nio-8080-exec-7] INFO  log2 - Service: Found 8 employees
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=123-456-7890, position=Software Engineer, salary=75000.0)
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - First Name: John
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Last Name: Doe
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Email: john.doe@example.com
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Phone Number: 123-456-7890
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Position: Software Engineer
+2025-03-10 13:43:56 [http-nio-8080-exec-10] INFO  log2 - Salary: 75000.0
+2025-03-10 13:43:56 [http-nio-8080-exec-10] ERROR log2 - Detailed error:
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:624)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl.createEmployee(EmployeeServiceImpl.java:119)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$89df4e8e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$bd9dae69.createEmployee(<generated>)
+	at com.example.cruddemo.controller.EmployeeController.createEmployee(EmployeeController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.result.internal.OutputsImpl.convert(OutputsImpl.java:83)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:60)
+	at org.hibernate.procedure.internal.ProcedureOutputsImpl.<init>(ProcedureOutputsImpl.java:34)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.buildOutputs(ProcedureCallImpl.java:418)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.getOutputs(ProcedureCallImpl.java:354)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.outputs(ProcedureCallImpl.java:634)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:617)
+	... 64 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'john.doe@example.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.mysql.cj.jdbc.CallableStatement.execute(CallableStatement.java:847)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:56)
+	... 69 common frames omitted
+2025-03-10 13:43:56 [http-nio-8080-exec-10] ERROR log2 - Full stack trace: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:624)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl.createEmployee(EmployeeServiceImpl.java:119)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$FastClassBySpringCGLIB$$89df4e8e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.example.cruddemo.service.impl.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$bd9dae69.createEmployee(<generated>)
+	at com.example.cruddemo.controller.EmployeeController.createEmployee(EmployeeController.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.result.internal.OutputsImpl.convert(OutputsImpl.java:83)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:60)
+	at org.hibernate.procedure.internal.ProcedureOutputsImpl.<init>(ProcedureOutputsImpl.java:34)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.buildOutputs(ProcedureCallImpl.java:418)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.getOutputs(ProcedureCallImpl.java:354)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.outputs(ProcedureCallImpl.java:634)
+	at org.hibernate.procedure.internal.ProcedureCallImpl.execute(ProcedureCallImpl.java:617)
+	... 64 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'john.doe@example.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.mysql.cj.jdbc.CallableStatement.execute(CallableStatement.java:847)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.hibernate.result.internal.OutputsImpl.<init>(OutputsImpl.java:56)
+	... 69 more
+
+2025-03-10 13:44:07 [http-nio-8080-exec-1] INFO  log2 - Service: Found 8 employees
+2025-03-10 13:44:08 [http-nio-8080-exec-3] INFO  log2 - Service: Found 8 employees
+2025-03-10 13:44:10 [http-nio-8081-exec-3] INFO  log2 - Service: Found 4 employees
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot4@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot4@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - First Name: Anindya
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Last Name: Biswas
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Email: anindyaSpringBoot4@gmail.com
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Phone Number: 01721584048
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Position: Java
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Salary: 37000.0
+2025-03-10 13:44:50 [http-nio-8080-exec-9] INFO  log2 - Generated ID from stored procedure: 19
+2025-03-10 13:44:58 [http-nio-8081-exec-1] INFO  log2 - Service: Found 4 employees
+2025-03-10 13:45:02 [http-nio-8081-exec-8] INFO  log2 - Service: Found 4 employees
+2025-03-10 13:45:04 [http-nio-8080-exec-6] INFO  log2 - Service: Found 9 employees
+2025-03-10 13:45:24 [http-nio-8081-exec-2] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:45:24 [http-nio-8081-exec-2] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:45:29 [http-nio-8081-exec-5] INFO  log2 - Employee creation details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot2@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:45:29 [http-nio-8081-exec-5] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoot2@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:45:32 [http-nio-8081-exec-7] INFO  log2 - Service: Found 6 employees
+2025-03-10 13:45:50 [http-nio-8081-exec-4] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:45:50 [http-nio-8081-exec-4] INFO  log2 - Service: Updated employee details: Employee(id=6, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:47:25 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 13:48:29 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-10 13:48:29 [http-nio-8080-exec-2] INFO  log2 - Service: Found 9 employees
+2025-03-10 13:48:30 [http-nio-8080-exec-1] INFO  log2 - Service: Found 9 employees
+2025-03-10 13:48:48 [http-nio-8080-exec-3] INFO  log2 - Service: Found 9 employees
+2025-03-10 13:48:51 [http-nio-8081-exec-1] INFO  log2 - Service: Found 6 employees
+2025-03-10 13:48:51 [http-nio-8081-exec-2] INFO  log2 - Service: Found 6 employees
+2025-03-10 13:49:26 [http-nio-8081-exec-6] INFO  log2 - Service: Found 6 employees
+2025-03-10 13:49:27 [http-nio-8081-exec-3] INFO  log2 - Service: Found 6 employees
+2025-03-10 13:49:29 [http-nio-8080-exec-6] INFO  log2 - Service: Found 9 employees
+2025-03-10 13:49:33 [http-nio-8081-exec-9] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:49:33 [http-nio-8081-exec-9] INFO  log2 - Service: Updated employee details: Employee(id=6, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:49:45 [http-nio-8080-exec-8] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:49:54 [http-nio-8080-exec-10] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:50:00 [http-nio-8080-exec-9] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 13:50:00 [http-nio-8080-exec-9] INFO  log2 - Service: Updated employee details: Employee(id=17, firstName=Anindya, lastName=Biswas, email=anindyaSpringBoo@gmail.com, phoneNumber=01721584048, position=Java, salary=37000.0)
+2025-03-10 15:10:36 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 15:36:05 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-10 15:36:08 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled

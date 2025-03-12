@@ -1,0 +1,4 @@
+2025-03-11 14:44:50 [restartedMain] INFO  log2 - DEVELOPMENT MODE: Additional debugging enabled
+2025-03-11 14:45:29 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-11 14:45:29 [http-nio-8080-exec-1] INFO  log2 - Service: Found 9 employees
+2025-03-11 14:45:31 [http-nio-8081-exec-1] INFO  log2 - Service: Found 6 employees
