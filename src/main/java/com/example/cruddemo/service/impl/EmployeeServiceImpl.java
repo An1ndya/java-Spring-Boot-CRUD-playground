@@ -17,6 +17,8 @@ import javax.persistence.StoredProcedureQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
@@ -111,7 +113,9 @@ public class EmployeeServiceImpl implements EmployeeService {
             query.execute();
             
             // Retrieve the inserted employee
-            Employee insertedEmployee = (Employee) query.getSingleResult();
+            Object queryObject = query.getSingleResult();
+            Employee insertedEmployee = mapQueryResultToEntity(queryObject, Employee.class);
+            //Employee insertedEmployee = (Employee) query.getSingleResult();
             
             return insertedEmployee;
         } catch (RuntimeException e) {
@@ -274,5 +278,47 @@ public class EmployeeServiceImpl implements EmployeeService {
             AppLogger.log2Info("Service: No employee found with email: {}", email);
         }
         return employee;
+    }
+
+    /**
+     * Maps a database query result to an entity model object
+     * 
+     * @param queryResult The object returned from a database query
+     * @param entityClass The class of the model entity to map to
+     * @param <T> The type of the entity model
+     * @return The mapped entity model object
+     * @throws IllegalArgumentException if mapping fails
+     */
+    public <T> T mapQueryResultToEntity(Object queryResult, Class<T> entityClass) {
+        AppLogger.log1Info("Service: Mapping query result to entity of type: {}", entityClass.getSimpleName());
+        
+        try {
+            // Create a new instance of the target entity class
+            T entityInstance = entityClass.getDeclaredConstructor().newInstance();
+            
+            // Use reflection to copy properties from queryResult to entityInstance
+            for (java.lang.reflect.Method method : entityClass.getDeclaredMethods()) {
+                if (method.getName().startsWith("set")) {
+                    String propertyName = method.getName().substring(3);
+                    propertyName = Character.toLowerCase(propertyName.charAt(0)) + propertyName.substring(1);
+                    
+                    try {
+                        java.lang.reflect.Method getterMethod = queryResult.getClass().getMethod("get" + Character.toUpperCase(propertyName.charAt(0)) + propertyName.substring(1));
+                        Object value = getterMethod.invoke(queryResult);
+                        
+                        method.invoke(entityInstance, value); 
+                    } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+                        // Log warning if property cannot be mapped, but continue processing
+                        AppLogger.log2Warn("Could not map property {} for {}", propertyName, entityClass.getSimpleName());
+                    }
+                }
+            }
+            
+            AppLogger.log2Info("Successfully mapped query result to {}", entityClass.getSimpleName());
+            return entityInstance;
+        } catch (Exception e) {
+            AppLogger.log1Error("Error mapping query result to entity: {}", e.getMessage());
+            throw new IllegalArgumentException("Failed to map query result to entity: " + e.getMessage(), e);
+        }
     }
 }
