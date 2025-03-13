@@ -7,10 +7,14 @@ import com.example.cruddemo.service.EmployeeService;
 import com.example.cruddemo.util.AppLogger;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Lock;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.LockModeType;
 import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
 
@@ -28,7 +32,6 @@ import java.util.Optional;
  * Provides business logic for employee-related operations.
  */
 @Service
-@Transactional
 @Slf4j
 public class EmployeeServiceImpl implements EmployeeService {
 
@@ -191,7 +194,10 @@ public class EmployeeServiceImpl implements EmployeeService {
      * @throws ResourceNotFoundException if employee not found
      */
     @Override
-    public Employee updateEmployee(Long id, Employee employeeDetails) {
+    @Transactional
+    @Lock(LockModeType.PESSIMISTIC_READ) 
+    @Query("SELECT * FROM employees WHERE id = :id")
+    public Employee updateEmployee(@Param("id")Long id, Employee employeeDetails) {
         AppLogger.log1Info("Service: Updating employee with ID: " + id);
         
         // Find the employee by ID or throw exception if not found
