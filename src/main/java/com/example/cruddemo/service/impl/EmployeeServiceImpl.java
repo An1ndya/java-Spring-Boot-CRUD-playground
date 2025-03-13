@@ -7,6 +7,7 @@ import com.example.cruddemo.service.EmployeeService;
 import com.example.cruddemo.util.AppLogger;
 import lombok.extern.slf4j.Slf4j;
 
+import org.hibernate.Session;
 import org.hibernate.TransactionException;
 import org.hibernate.exception.LockAcquisitionException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     
     // Entity manager for stored procedure calls
     private final EntityManager entityManager;
+
+    private Session session;
 
     /**
      * Constructor-based dependency injection
@@ -103,8 +106,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         try {
             // Validate input
             validateEmployeeInput(employee);
+            session.beginTransaction();
             
-            StoredProcedureQuery query = entityManager.createStoredProcedureQuery("sp_insert_employee", Employee.class)
+            StoredProcedureQuery query = session.createStoredProcedureQuery("sp_insert_employee", Employee.class)
                     .registerStoredProcedureParameter("first_name_param", String.class, ParameterMode.IN)
                     .registerStoredProcedureParameter("last_name_param", String.class, ParameterMode.IN)
                     .registerStoredProcedureParameter("email_param", String.class, ParameterMode.IN)
@@ -120,6 +124,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             
             // Execute the stored procedure
             query.execute();
+            session.getTransaction().commit();
             
             // Retrieve the inserted employee
             Object queryObject = query.getSingleResult();
@@ -128,6 +133,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             
             return insertedEmployee;
         } catch (RuntimeException e) {
+            session.getTransaction().rollback();
             AppLogger.log1Error("Error creating employee: {}", e.getMessage());
             
             // Detailed error logging
