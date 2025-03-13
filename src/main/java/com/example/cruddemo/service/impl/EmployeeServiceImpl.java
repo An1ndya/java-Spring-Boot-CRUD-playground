@@ -6,6 +6,9 @@ import com.example.cruddemo.repository.EmployeeRepository;
 import com.example.cruddemo.service.EmployeeService;
 import com.example.cruddemo.util.AppLogger;
 import lombok.extern.slf4j.Slf4j;
+
+import org.hibernate.TransactionException;
+import org.hibernate.exception.LockAcquisitionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;
@@ -17,6 +20,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.LockModeType;
 import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
+import javax.validation.ValidationException;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -24,6 +28,8 @@ import java.io.StringWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
+import java.sql.SQLException;
+import java.util.ConcurrentModificationException;
 import java.util.List;
 import java.util.Optional;
 
@@ -194,32 +200,103 @@ public class EmployeeServiceImpl implements EmployeeService {
      * @throws ResourceNotFoundException if employee not found
      */
     @Override
-    @Transactional
+    @Transactional(rollbackFor = {Exception.class})
     @Lock(LockModeType.PESSIMISTIC_READ) 
     @Query("SELECT * FROM employees WHERE id = :id")
-    public Employee updateEmployee(@Param("id")Long id, Employee employeeDetails) {
-        AppLogger.log1Info("Service: Updating employee with ID: " + id);
+    public Employee updateEmployee(@Param("id") Long id, Employee employeeDetails) {
+        AppLogger.log1Info("Service: Attempting to update employee with ID: {}", id);
         
-        // Find the employee by ID or throw exception if not found
-        Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() -> {
-                    AppLogger.log1Error("Employee not found with id: " + id);
-                    return new ResourceNotFoundException("Employee not found with id: " + id);
-                });
+        try {
+            // Validate input
+            validateEmployeeUpdateInput(employeeDetails);
+            
+            // Find the employee by ID or throw exception if not found
+            Employee employee = employeeRepository.findById(id)
+                    .orElseThrow(() -> {
+                        AppLogger.log1Error("Employee not found with id: {}", id);
+                        return new ResourceNotFoundException("Employee not found with id: " + id);
+                    });
+            
+            // Perform update with null-safe checks
+            updateEmployeeFields(employee, employeeDetails);
+            
+            // Save the updated employee
+            Employee updatedEmployee = employeeRepository.save(employee);
+            
+            AppLogger.log2Info("Successfully updated employee with ID: {}", id);
+            return updatedEmployee;
         
-        // Update employee fields
-        employee.setFirstName(employeeDetails.getFirstName());
-        employee.setLastName(employeeDetails.getLastName());
-        employee.setEmail(employeeDetails.getEmail());
-        employee.setPhoneNumber(employeeDetails.getPhoneNumber());
-        employee.setPosition(employeeDetails.getPosition());
-        employee.setSalary(employeeDetails.getSalary());
+        } catch (ResourceNotFoundException e) {
+            // Specific handling for employee not found
+            AppLogger.log1Error("Update failed - Employee not found: {}", e.getMessage());
+            throw e;
         
-        // Save and return the updated employee
-        AppLogger.log2Info("Service: Updated employee details: " + employee); // More detailed log in secondary log
-        Employee updatedEmployee = employeeRepository.save(employee);
-        AppLogger.log1Info("Service: Employee updated successfully: {}", updatedEmployee.getId());
-        return updatedEmployee;
+        } catch (org.springframework.orm.ObjectOptimisticLockingFailureException e) {
+            // Handle concurrent modification attempts
+            AppLogger.log1Error("Concurrent modification detected for employee ID: {}", id);
+            throw new ConcurrentModificationException("Another user is updating this employee. Please try again.", e);
+        
+        } catch (org.springframework.transaction.TransactionSystemException e) {
+            // Handle transaction-related exceptions
+            AppLogger.log1Error("Transaction failed during employee update: {}", e.getMessage());
+            throw new TransactionException("Transaction failed. Changes were not saved.", e);
+        
+        } catch (org.springframework.dao.DataIntegrityViolationException e) {
+            // Handle database constraint violations
+            AppLogger.log1Error("Data integrity violation during update: {}", e.getMessage());
+            throw new ValidationException("Update violates data integrity constraints.", e);
+        
+        } catch (Exception e) {
+            // Catch-all for unexpected exceptions
+            AppLogger.log1Error("Unexpected error during employee update: {}", e.getMessage());
+            throw new RuntimeException("Unexpected error occurred during update.", e);
+        }
+    }
+    
+    /**
+     * Validates input for employee update
+     * @param employeeDetails Employee details to validate
+     * @throws ValidationException if validation fails
+     */
+    private void validateEmployeeUpdateInput(Employee employeeDetails) {
+        if (employeeDetails == null) {
+            throw new IllegalArgumentException("Employee update details cannot be null");
+        }
+        
+        // Validate specific fields
+        if (employeeDetails.getEmail() != null && !isValidEmail(employeeDetails.getEmail())) {
+            throw new ValidationException("Invalid email format");
+        }
+        
+        if (employeeDetails.getSalary() != null && employeeDetails.getSalary() < 0) {
+            throw new ValidationException("Salary cannot be negative");
+        }
+    }
+    
+    /**
+     * Performs null-safe update of employee fields
+     * @param existingEmployee Current employee entity
+     * @param updateDetails Employee details to update
+     */
+    private void updateEmployeeFields(Employee existingEmployee, Employee updateDetails) {
+        if (updateDetails.getFirstName() != null) {
+            existingEmployee.setFirstName(updateDetails.getFirstName());
+        }
+        if (updateDetails.getLastName() != null) {
+            existingEmployee.setLastName(updateDetails.getLastName());
+        }
+        if (updateDetails.getEmail() != null) {
+            existingEmployee.setEmail(updateDetails.getEmail());
+        }
+        if (updateDetails.getPhoneNumber() != null) {
+            existingEmployee.setPhoneNumber(updateDetails.getPhoneNumber());
+        }
+        if (updateDetails.getPosition() != null) {
+            existingEmployee.setPosition(updateDetails.getPosition());
+        }
+        if (updateDetails.getSalary() != null) {
+            existingEmployee.setSalary(updateDetails.getSalary());
+        }
     }
 
     /**

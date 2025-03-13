@@ -103,3 +103,14 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'a
 	... 69 more
 
 2025-03-13 12:48:24 [http-nio-8080-exec-4] INFO  log2 - Service: Found 12 employees
+2025-03-13 14:42:28 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-13 14:42:39 [http-nio-8080-exec-2] INFO  log2 - Service: Found 12 employees
+2025-03-13 14:43:00 [http-nio-8080-exec-4] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindya.SBL12@gmail.com, phoneNumber=01721584048, position=boot, salary=37000.0)
+2025-03-13 14:43:00 [http-nio-8080-exec-4] INFO  log2 - Service: Updated employee details: Employee(id=22, firstName=Anindya, lastName=Biswas, email=anindya.SBL12@gmail.com, phoneNumber=01721584048, position=boot, salary=37000.0)
+2025-03-13 15:19:04 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-13 15:19:11 [http-nio-8080-exec-1] INFO  log2 - Service: Found 12 employees
+2025-03-13 15:19:12 [http-nio-8080-exec-7] INFO  log2 - Service: Found 12 employees
+2025-03-13 15:19:13 [http-nio-8080-exec-5] INFO  log2 - Service: Found 12 employees
+2025-03-13 15:19:14 [http-nio-8080-exec-4] INFO  log2 - Service: Found 12 employees
+2025-03-13 15:19:23 [http-nio-8080-exec-2] INFO  log2 - Employee update details: Employee(id=null, firstName=Anindya, lastName=Biswas, email=anindya.SBL123@gmail.com, phoneNumber=01721584048, position=boot, salary=37000.0)
+2025-03-13 15:19:23 [http-nio-8080-exec-2] INFO  log2 - Successfully updated employee with ID: 22
