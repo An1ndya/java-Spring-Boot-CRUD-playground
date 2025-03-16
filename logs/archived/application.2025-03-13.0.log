@@ -1,0 +1,377 @@
+2025-03-13 09:58:41 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 4612 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-13 09:58:41 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "dev"
+2025-03-13 09:58:41 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13 09:58:41 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13 09:58:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13 09:58:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2025-03-13 09:58:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-13 09:58:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:58:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-13 09:58:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-13 09:58:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-13 09:58:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1054 ms
+2025-03-13 09:58:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-13 09:58:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-13 09:58:42 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_test_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-13 09:58:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 09:58:43 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-13 09:58:43 [restartedMain] INFO  log1 - EmployeeServiceImpl initialized with repository and entity manager
+2025-03-13 09:58:43 [restartedMain] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-13 09:58:43 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13 09:58:43 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-13 09:58:43 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2025-03-13 09:58:43 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-13 09:58:43 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-13 09:58:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-13 09:58:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:58:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-13 09:58:43 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 2.953 seconds (JVM running for 3.878)
+2025-03-13 09:58:43 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-13 09:58:43 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) as col_0_0_ 
+    from
+        employees employee0_
+2025-03-13 09:58:43 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-13 09:58:43 [restartedMain] INFO  log1 - Running with active profile: dev
+2025-03-13 09:58:43 [restartedMain] INFO  log1 - Database URL: jdbc:mysql://localhost:3306/employee_test_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+2025-03-13 09:58:43 [restartedMain] INFO  log1 - Server Port: 8081
+2025-03-13 09:59:01 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (0 additions, 14 deletions, 3 modifications)
+2025-03-13 09:59:01 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:01 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-13 09:59:01 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:01 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:01 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 09:59:01 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-13 09:59:01 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-13 09:59:01 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 4612 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-13 09:59:01 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "dev"
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-13 09:59:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-13 09:59:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-13 09:59:01 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 220 ms
+2025-03-13 09:59:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-03-13 09:59:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_test_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 09:59:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13 09:59:01 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-13 09:59:01 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+2025-03-13 09:59:01 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-13 09:59:01 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-13 09:59:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-13 09:59:01 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 0.463 seconds (JVM running for 22.027)
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-13 09:59:01 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoClassDefFoundError: com/example/cruddemo/util/AppLogger
+	at com.example.cruddemo.CrudDemoApplication.lambda$demoEnvironment$0(CrudDemoApplication.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$2(SpringApplication.java:749)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.example.cruddemo.CrudDemoApplication.main(CrudDemoApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.ClassNotFoundException: com.example.cruddemo.util.AppLogger
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 21 common frames omitted
+2025-03-13 09:59:01 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 09:59:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-03-13 09:59:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-03-13 09:59:03 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 4612 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-13 09:59:03 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "dev"
+2025-03-13 09:59:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13 09:59:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2025-03-13 09:59:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-13 09:59:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-13 09:59:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-13 09:59:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-13 09:59:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 246 ms
+2025-03-13 09:59:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-03-13 09:59:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-03-13 09:59:03 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_test_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-13 09:59:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 09:59:04 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-13 09:59:04 [restartedMain] INFO  log1 - EmployeeServiceImpl initialized with repository and entity manager
+2025-03-13 09:59:04 [restartedMain] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-13 09:59:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13 09:59:04 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-13 09:59:04 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2025-03-13 09:59:04 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-13 09:59:04 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-13 09:59:04 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-13 09:59:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-13 09:59:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-13 09:59:04 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 0.682 seconds (JVM running for 24.587)
+2025-03-13 09:59:04 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-13 09:59:04 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) as col_0_0_ 
+    from
+        employees employee0_
+2025-03-13 09:59:04 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-13 09:59:04 [restartedMain] INFO  log1 - Running with active profile: dev
+2025-03-13 09:59:04 [restartedMain] INFO  log1 - Database URL: jdbc:mysql://localhost:3306/employee_test_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+2025-03-13 09:59:04 [restartedMain] INFO  log1 - Server Port: 8081
+2025-03-13 09:59:04 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-13 09:59:05 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13 09:59:05 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@11c86224
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@794120e
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-13 09:59:05 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/employees", parameters={}
+2025-03-13 09:59:05 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.cruddemo.controller.EmployeeController#getAllEmployees()
+2025-03-13 09:59:06 [http-nio-8081-exec-1] INFO  log1 - Fetching all employees
+2025-03-13 09:59:06 [http-nio-8081-exec-1] INFO  log1 - Service: Getting all employees
+2025-03-13 09:59:06 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        employee0_.id as id1_0_,
+        employee0_.email as email2_0_,
+        employee0_.first_name as first_na3_0_,
+        employee0_.last_name as last_nam4_0_,
+        employee0_.phone_number as phone_nu5_0_,
+        employee0_.position as position6_0_,
+        employee0_.salary as salary7_0_ 
+    from
+        employees employee0_
+2025-03-13 09:59:06 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-03-13 09:59:06 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Employee(id=1, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567,  (truncated)...]
+2025-03-13 09:59:06 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Mar 13 09:59:06 BDT 2025, status=404, error=Not Found, message=No message available,  (truncated)...]
+2025-03-13 09:59:06 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-03-13 09:59:09 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/employees", parameters={}
+2025-03-13 09:59:09 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.cruddemo.controller.EmployeeController#getAllEmployees()
+2025-03-13 09:59:09 [http-nio-8081-exec-4] INFO  log1 - Fetching all employees
+2025-03-13 09:59:09 [http-nio-8081-exec-4] INFO  log1 - Service: Getting all employees
+2025-03-13 09:59:09 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        employee0_.id as id1_0_,
+        employee0_.email as email2_0_,
+        employee0_.first_name as first_na3_0_,
+        employee0_.last_name as last_nam4_0_,
+        employee0_.phone_number as phone_nu5_0_,
+        employee0_.position as position6_0_,
+        employee0_.salary as salary7_0_ 
+    from
+        employees employee0_
+2025-03-13 09:59:09 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2025-03-13 09:59:09 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Employee(id=1, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567,  (truncated)...]
+2025-03-13 09:59:09 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-03-13 10:13:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 10:13:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-03-13 10:13:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-03-13 11:46:42 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-13 11:46:42 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 8096 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-13 11:46:42 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "prod"
+2025-03-13 11:46:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13 11:46:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13 11:46:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13 11:46:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2025-03-13 11:46:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-13 11:46:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-13 11:46:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-13 11:46:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-13 11:46:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-13 11:46:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 960 ms
+2025-03-13 11:46:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-13 11:46:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-13 11:46:44 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-13 11:46:44 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13 11:46:44 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-13 11:46:44 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-13 11:46:44 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-13 11:46:44 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-13 11:46:44 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 11:46:44 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-13 11:46:44 [restartedMain] INFO  log1 - EmployeeServiceImpl initialized with repository and entity manager
+2025-03-13 11:46:44 [restartedMain] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-13 11:46:44 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13 11:46:45 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-13 11:46:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-13 11:46:45 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 2.592 seconds (JVM running for 2.91)
+2025-03-13 11:46:45 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-13 11:46:45 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-13 11:46:45 [restartedMain] INFO  log1 - Running with active profile: prod
+2025-03-13 11:46:45 [restartedMain] INFO  log1 - Database URL: jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+2025-03-13 11:46:45 [restartedMain] INFO  log1 - Server Port: 8080
+2025-03-13 11:46:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13 11:46:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-13 11:46:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-13 11:46:51 [http-nio-8080-exec-1] INFO  log1 - Fetching all employees
+2025-03-13 11:46:51 [http-nio-8080-exec-1] INFO  log1 - Service: Getting all employees
+2025-03-13 11:47:32 [http-nio-8080-exec-8] INFO  log1 - Creating new employee: Anindya Biswas
+2025-03-13 11:47:32 [http-nio-8080-exec-8] INFO  log1 - Service: Attempting to create new employee: Anindya Biswas
+2025-03-13 11:47:32 [http-nio-8080-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Anindya]
+2025-03-13 11:47:32 [http-nio-8080-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Biswas]
+2025-03-13 11:47:32 [http-nio-8080-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [anindya.SBL@gmail.com]
+2025-03-13 11:47:32 [http-nio-8080-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [01721584048]
+2025-03-13 11:47:32 [http-nio-8080-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [boot]
+2025-03-13 11:47:32 [http-nio-8080-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [NUMERIC] - [37000.0]
+2025-03-13 11:47:32 [http-nio-8080-exec-8] INFO  log1 - Service: Mapping query result to entity of type: Employee
+2025-03-13 12:22:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m56s35ms491µs).
+2025-03-13 12:33:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m21s369ms23µs).
+2025-03-13 12:40:21 [http-nio-8080-exec-3] INFO  log1 - Fetching all employees
+2025-03-13 12:40:21 [http-nio-8080-exec-3] INFO  log1 - Service: Getting all employees
+2025-03-13 12:40:25 [http-nio-8080-exec-2] INFO  log1 - Fetching all employees
+2025-03-13 12:40:25 [http-nio-8080-exec-2] INFO  log1 - Service: Getting all employees
+2025-03-13 12:40:41 [http-nio-8080-exec-9] INFO  log1 - Creating new employee: Anindya Biswas
+2025-03-13 12:40:41 [http-nio-8080-exec-9] INFO  log1 - Service: Attempting to create new employee: Anindya Biswas
+2025-03-13 12:40:41 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Anindya]
+2025-03-13 12:40:41 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Biswas]
+2025-03-13 12:40:41 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [anindya.SBL@gmail.com]
+2025-03-13 12:40:41 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [01721584048]
+2025-03-13 12:40:41 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [boot]
+2025-03-13 12:40:41 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [NUMERIC] - [37000.0]
+2025-03-13 12:40:41 [http-nio-8080-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2025-03-13 12:40:41 [http-nio-8080-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'anindya.SBL@gmail.com' for key 'employees.UK_j9xgmd0ya5jmus09o0b8pqrpb'
+2025-03-13 12:40:41 [http-nio-8080-exec-9] ERROR log1 - Error creating employee: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults
+2025-03-13 12:40:41 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Failed to create employee: org.hibernate.exception.ConstraintViolationException: Error calling CallableStatement.getMoreResults]
+2025-03-13 12:48:24 [http-nio-8080-exec-4] INFO  log1 - Fetching all employees
+2025-03-13 12:48:24 [http-nio-8080-exec-4] INFO  log1 - Service: Getting all employees
+2025-03-13 12:58:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s596ms294µs).
+2025-03-13 14:16:56 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m27s348ms493µs200ns).
+2025-03-13 14:42:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-13 14:42:26 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 18660 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-13 14:42:26 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "prod"
+2025-03-13 14:42:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13 14:42:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13 14:42:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13 14:42:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2025-03-13 14:42:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-13 14:42:27 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-13 14:42:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-13 14:42:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-13 14:42:27 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-13 14:42:27 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 888 ms
+2025-03-13 14:42:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-13 14:42:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-13 14:42:27 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-13 14:42:27 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13 14:42:27 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-13 14:42:27 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-13 14:42:27 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-13 14:42:28 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-13 14:42:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 14:42:28 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-13 14:42:28 [restartedMain] INFO  log1 - EmployeeServiceImpl initialized with repository and entity manager
+2025-03-13 14:42:28 [restartedMain] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-13 14:42:28 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13 14:42:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-13 14:42:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-13 14:42:28 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 2.414 seconds (JVM running for 2.699)
+2025-03-13 14:42:28 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-13 14:42:28 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-13 14:42:28 [restartedMain] INFO  log1 - Running with active profile: prod
+2025-03-13 14:42:28 [restartedMain] INFO  log1 - Database URL: jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+2025-03-13 14:42:28 [restartedMain] INFO  log1 - Server Port: 8080
+2025-03-13 14:42:39 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13 14:42:39 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-13 14:42:39 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-13 14:42:39 [http-nio-8080-exec-2] INFO  log1 - Fetching all employees
+2025-03-13 14:42:39 [http-nio-8080-exec-2] INFO  log1 - Service: Getting all employees
+2025-03-13 14:43:00 [http-nio-8080-exec-4] INFO  log1 - Updating employee with ID: 22
+2025-03-13 14:43:00 [http-nio-8080-exec-4] INFO  log1 - Service: Updating employee with ID: 22
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [22]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] INFO  log1 - Service: Employee updated successfully: 22
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [anindya.SBL12@gmail.com]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Anindya]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Biswas]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [01721584048]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [boot]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [DOUBLE] - [37000.0]
+2025-03-13 14:43:00 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [22]
+2025-03-13 15:19:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-13 15:19:02 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 18492 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-13 15:19:02 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "prod"
+2025-03-13 15:19:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13 15:19:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13 15:19:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13 15:19:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2025-03-13 15:19:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-13 15:19:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-13 15:19:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-13 15:19:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-13 15:19:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-13 15:19:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 929 ms
+2025-03-13 15:19:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-13 15:19:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-13 15:19:03 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-13 15:19:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13 15:19:03 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-13 15:19:03 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-13 15:19:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-13 15:19:04 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-13 15:19:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13 15:19:04 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-13 15:19:04 [restartedMain] INFO  log1 - EmployeeServiceImpl initialized with repository and entity manager
+2025-03-13 15:19:04 [restartedMain] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-13 15:19:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13 15:19:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-13 15:19:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-13 15:19:04 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 2.498 seconds (JVM running for 2.762)
+2025-03-13 15:19:04 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-13 15:19:04 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-13 15:19:04 [restartedMain] INFO  log1 - Running with active profile: prod
+2025-03-13 15:19:04 [restartedMain] INFO  log1 - Database URL: jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+2025-03-13 15:19:04 [restartedMain] INFO  log1 - Server Port: 8080
+2025-03-13 15:19:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13 15:19:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-13 15:19:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-13 15:19:11 [http-nio-8080-exec-1] INFO  log1 - Fetching all employees
+2025-03-13 15:19:11 [http-nio-8080-exec-1] INFO  log1 - Service: Getting all employees
+2025-03-13 15:19:12 [http-nio-8080-exec-7] INFO  log1 - Fetching all employees
+2025-03-13 15:19:12 [http-nio-8080-exec-7] INFO  log1 - Service: Getting all employees
+2025-03-13 15:19:13 [http-nio-8080-exec-5] INFO  log1 - Fetching all employees
+2025-03-13 15:19:13 [http-nio-8080-exec-5] INFO  log1 - Service: Getting all employees
+2025-03-13 15:19:14 [http-nio-8080-exec-4] INFO  log1 - Fetching all employees
+2025-03-13 15:19:14 [http-nio-8080-exec-4] INFO  log1 - Service: Getting all employees
+2025-03-13 15:19:23 [http-nio-8080-exec-2] INFO  log1 - Updating employee with ID: 22
+2025-03-13 15:19:23 [http-nio-8080-exec-2] INFO  log1 - Service: Attempting to update employee with ID: 22
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [22]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [anindya.SBL123@gmail.com]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Anindya]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Biswas]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [01721584048]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [boot]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [DOUBLE] - [37000.0]
+2025-03-13 15:19:23 [http-nio-8080-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [22]
+2025-03-13 15:48:25 [http-nio-8080-exec-9] INFO  log1 - Fetching all employees
+2025-03-13 15:48:25 [http-nio-8080-exec-9] INFO  log1 - Service: Getting all employees
+2025-03-13 15:48:27 [http-nio-8080-exec-10] INFO  log1 - Fetching all employees
+2025-03-13 15:48:27 [http-nio-8080-exec-10] INFO  log1 - Service: Getting all employees
+2025-03-13 15:55:00 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m56s537ms84µs400ns).
