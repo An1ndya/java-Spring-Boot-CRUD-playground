@@ -49,6 +49,7 @@ public class ManagerServiceImpl implements ManagerService {
         existingManager.setLastName(managerDetails.getLastName());
         existingManager.setEmail(managerDetails.getEmail());
         existingManager.setPhoneNumber(managerDetails.getPhoneNumber());
+        existingManager.setSalary(managerDetails.getSalary());
 
         AppLogger.log1Info("Updating manager with ID: " + managerId);
         return managerRepository.save(existingManager);

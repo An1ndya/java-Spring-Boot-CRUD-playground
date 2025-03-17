@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "managers")
@@ -35,4 +36,8 @@ public class Manager implements Serializable {
 
     @Column(name = "phone_number")
     private String phoneNumber;
+
+    @NotNull
+    @Column(name = "salary", precision = 10, scale = 2)
+    private BigDecimal salary;
 }

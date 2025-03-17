@@ -26,7 +26,10 @@ public class ManagerController {
 
     @PostMapping
     public ResponseEntity<Manager> createManager(@Valid @RequestBody Manager manager) {
-        log.info("Creating new manager: {}", manager.getFirstName() + " " + manager.getLastName());
+        log.info("Creating new manager: {} {} with salary: {}", 
+                manager.getFirstName(), 
+                manager.getLastName(), 
+                manager.getSalary());
         return new ResponseEntity<>(managerService.createManager(manager), HttpStatus.CREATED);
     }
 
@@ -42,7 +45,7 @@ public class ManagerController {
     public ResponseEntity<Manager> updateManager(
             @PathVariable Long managerId, 
             @Valid @RequestBody Manager managerDetails) {
-        log.info("Updating manager with ID: {}", managerId);
+        log.info("Updating manager with ID: {} with new salary: {}", managerId, managerDetails.getSalary());
         return ResponseEntity.ok(managerService.updateManager(managerId, managerDetails));
     }
 
