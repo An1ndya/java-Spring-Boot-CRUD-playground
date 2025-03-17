@@ -1,0 +1,3 @@
+2025-03-16 12:06:25 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-16 12:06:44 [http-nio-8080-exec-2] INFO  log2 - Service: Found 12 employees
+2025-03-16 12:06:45 [http-nio-8080-exec-3] INFO  log2 - Service: Found 12 employees
