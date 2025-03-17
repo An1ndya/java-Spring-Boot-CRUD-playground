@@ -1,6 +1,8 @@
 package com.example.cruddemo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,6 +19,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Manager implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -24,7 +27,7 @@ public class Manager implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "manager_id")
-    private Long managerId;
+    private Long id;
 
     @NotNull
     @Column(name = "first_name")
@@ -47,4 +50,13 @@ public class Manager implements Serializable {
     @OneToMany(mappedBy = "manager", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
     private List<Employee> employees = new ArrayList<>();
+
+    // Optional: Constructor for easier creation
+    public Manager(String firstName, String lastName, String email, String phoneNumber, BigDecimal salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.salary = salary;
+    }
 }

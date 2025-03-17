@@ -29,7 +29,7 @@ public class EmployeeController {
 
     /**
      * Constructor-based dependency injection
-     * @param employeeService The service for employee business logic
+     * @param employeeService The employee service to be used
      */
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
@@ -81,17 +81,18 @@ public class EmployeeController {
 
     /**
      * Update employee endpoint
-     * @param employeeId The ID of the employee to update
+     * @param id The ID of the employee to update
      * @param employeeDetails The updated employee details
      * @return The updated employee with HTTP status
      */
     @PutMapping("/{id}")
     public ResponseEntity<Employee> updateEmployee(
-            @PathVariable(value = "id") Long employeeId,
+            @PathVariable(value = "id") Long employeeId, 
             @Valid @RequestBody Employee employeeDetails) {
         
         AppLogger.log1Info("Updating employee with ID: " + employeeId);
         AppLogger.log2Info("Employee update details: " + employeeDetails); // Log details to secondary log
+        
         Employee updatedEmployee = employeeService.updateEmployee(employeeId, employeeDetails);
         return ResponseEntity.ok(updatedEmployee);
     }

@@ -284,6 +284,17 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (employeeDetails.getSalary() != null && employeeDetails.getSalary() < 0) {
             throw new ValidationException("Salary cannot be negative");
         }
+        
+        // Validate manager if provided
+        if (employeeDetails.getManager() != null) {
+            // Verify manager exists in the database
+            managerRepository.findById(employeeDetails.getManager().getId())
+                .orElseThrow(() -> new ResourceNotFoundException(
+                    "Manager not found with id: " + employeeDetails.getManager().getId()));
+            
+            AppLogger.log2Info("Updating employee with manager ID: {}", 
+                employeeDetails.getManager().getId());
+        }
     }
     
     /**
@@ -310,13 +321,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (updateDetails.getSalary() != null) {
             existingEmployee.setSalary(updateDetails.getSalary());
         }
-        // Add support for updating manager
+        // Update manager if provided
         if (updateDetails.getManager() != null) {
-            // Check if the manager exists in the database
-            Manager managerId = updateDetails.getManager();
-            Manager existingManager = managerRepository.findById(managerId.getId())
+            // Validate manager existence in the database
+            Manager existingManager = managerRepository.findById(updateDetails.getManager().getId())
                 .orElseThrow(() -> new ResourceNotFoundException(
-                    "Manager not found with id: " + managerId.getId()));
+                    "Manager not found with id: " + updateDetails.getManager().getId()));
             
             existingEmployee.setManager(existingManager);
         }

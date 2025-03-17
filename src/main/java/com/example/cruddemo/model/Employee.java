@@ -48,8 +48,8 @@ public class Employee implements Serializable {
     @Column
     private Double salary;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "manager_id", nullable = true)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "manager_id", nullable = true, referencedColumnName = "manager_id")
     private Manager manager;
 
     // Getters and Setters
