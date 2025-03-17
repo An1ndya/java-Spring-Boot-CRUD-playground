@@ -2,7 +2,9 @@ package com.example.cruddemo.service.impl;
 
 import com.example.cruddemo.exception.ResourceNotFoundException;
 import com.example.cruddemo.model.Employee;
+import com.example.cruddemo.model.Manager;
 import com.example.cruddemo.repository.EmployeeRepository;
+import com.example.cruddemo.repository.ManagerRepository;
 import com.example.cruddemo.service.EmployeeService;
 import com.example.cruddemo.util.AppLogger;
 import lombok.extern.slf4j.Slf4j;
@@ -47,6 +49,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     
     // Entity manager for stored procedure calls
     private final EntityManager entityManager;
+    
+    // Manager repository for manager updates
+    private final ManagerRepository managerRepository;
 
     private Session session;
 
@@ -54,13 +59,15 @@ public class EmployeeServiceImpl implements EmployeeService {
      * Constructor-based dependency injection
      * @param employeeRepository The repository for employee data access
      * @param entityManager The entity manager for stored procedure execution
+     * @param managerRepository The repository for manager data access
      */
     @Autowired
-    public EmployeeServiceImpl(EmployeeRepository employeeRepository, EntityManager entityManager) {
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository, EntityManager entityManager, ManagerRepository managerRepository) {
         this.employeeRepository = employeeRepository;
         this.entityManager = entityManager;
+        this.managerRepository = managerRepository;
                 
-        AppLogger.log1Info("EmployeeServiceImpl initialized with repository and entity manager");
+        AppLogger.log1Info("EmployeeServiceImpl initialized with repository, entity manager, and manager repository");
     }
 
     /**
@@ -305,7 +312,13 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
         // Add support for updating manager
         if (updateDetails.getManager() != null) {
-            existingEmployee.setManager(updateDetails.getManager());
+            // Check if the manager exists in the database
+            Manager managerId = updateDetails.getManager();
+            Manager existingManager = managerRepository.findById(managerId.getId())
+                .orElseThrow(() -> new ResourceNotFoundException(
+                    "Manager not found with id: " + managerId.getId()));
+            
+            existingEmployee.setManager(existingManager);
         }
     }
 

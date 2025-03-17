@@ -296,3 +296,52 @@ Caused by: org.hibernate.MappingException: Unable to find column with logical na
 2025-03-17 12:06:12 [http-nio-8080-exec-1] INFO  log1 - Updating employee with ID: 1
 2025-03-17 12:06:12 [http-nio-8080-exec-1] INFO  log1 - Service: Attempting to update employee with ID: 1
 2025-03-17 12:06:12 [http-nio-8080-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 12:12:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-17 12:12:37 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Starting CrudDemoApplication using Java 17.0.12 on DESKTOP-0BBIV6G with PID 10200 (E:\55234\Java sprint boot and hibernate DB crud project\target\classes started by Hp in E:\55234\Java sprint boot and hibernate DB crud project)
+2025-03-17 12:12:37 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - The following 1 profile is active: "prod"
+2025-03-17 12:12:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-17 12:12:37 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-17 12:12:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-17 12:12:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2025-03-17 12:12:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-17 12:12:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-17 12:12:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-17 12:12:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-03-17 12:12:39 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-17 12:12:39 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1309 ms
+2025-03-17 12:12:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-17 12:12:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-17 12:12:39 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true'
+2025-03-17 12:12:39 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-17 12:12:39 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-17 12:12:39 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-17 12:12:39 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-17 12:12:40 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-17 12:12:40 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-17 12:12:40 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - DataInitializer initialized with repository
+2025-03-17 12:12:40 [restartedMain] INFO  log1 - EmployeeServiceImpl initialized with repository and entity manager
+2025-03-17 12:12:40 [restartedMain] INFO  c.e.c.controller.EmployeeController - EmployeeController initialized with service
+2025-03-17 12:12:40 [restartedMain] INFO  c.e.c.controller.ManagerController - ManagerController initialized with service
+2025-03-17 12:12:40 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-17 12:12:40 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-17 12:12:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-17 12:12:40 [restartedMain] INFO  c.e.cruddemo.CrudDemoApplication - Started CrudDemoApplication in 3.82 seconds (JVM running for 4.229)
+2025-03-17 12:12:40 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Starting data initialization...
+2025-03-17 12:12:40 [restartedMain] INFO  c.e.cruddemo.config.DataInitializer - Data already exists, skipping initialization
+2025-03-17 12:12:40 [restartedMain] INFO  log1 - Running with active profile: prod
+2025-03-17 12:12:40 [restartedMain] INFO  log1 - Database URL: jdbc:mysql://localhost:3306/employee_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+2025-03-17 12:12:40 [restartedMain] INFO  log1 - Server Port: 8080
+2025-03-17 12:12:54 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-17 12:12:54 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-17 12:12:54 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-17 12:12:54 [http-nio-8080-exec-1] INFO  log1 - Updating employee with ID: 1
+2025-03-17 12:12:54 [http-nio-8080-exec-1] INFO  log1 - Service: Attempting to update employee with ID: 1
+2025-03-17 12:12:55 [http-nio-8080-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 12:12:55 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.example.cruddemo.model.Employee.manager -> com.example.cruddemo.model.Manager; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.example.cruddemo.model.Employee.manager -> com.example.cruddemo.model.Manager]
+2025-03-17 12:13:23 [http-nio-8080-exec-4] INFO  log1 - Fetching employee with ID: 1
+2025-03-17 12:13:23 [http-nio-8080-exec-4] INFO  log1 - Service: Getting employee with ID: 1
+2025-03-17 12:13:23 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 12:13:53 [http-nio-8080-exec-5] INFO  log1 - Updating employee with ID: 1
+2025-03-17 12:13:53 [http-nio-8080-exec-5] INFO  log1 - Service: Attempting to update employee with ID: 1
+2025-03-17 12:13:53 [http-nio-8080-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 12:13:53 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.example.cruddemo.model.Employee.manager -> com.example.cruddemo.model.Manager; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.example.cruddemo.model.Employee.manager -> com.example.cruddemo.model.Manager]
