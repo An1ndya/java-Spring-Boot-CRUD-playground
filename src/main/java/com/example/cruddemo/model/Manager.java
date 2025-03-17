@@ -1,5 +1,6 @@
 package com.example.cruddemo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,6 +9,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "managers")
@@ -40,4 +43,8 @@ public class Manager implements Serializable {
     @NotNull
     @Column(name = "salary", precision = 10, scale = 2)
     private BigDecimal salary;
+
+    @OneToMany(mappedBy = "manager", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
+    private List<Employee> employees = new ArrayList<>();
 }

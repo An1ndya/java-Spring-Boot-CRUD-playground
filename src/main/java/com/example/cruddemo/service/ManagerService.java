@@ -10,13 +10,13 @@ public interface ManagerService {
     Manager createManager(Manager manager);
 
     // Get manager by ID
-    Optional<Manager> getManagerById(Long managerId);
+    Optional<Manager> getManagerById(Long id);
 
     // Update manager
-    Manager updateManager(Long managerId, Manager managerDetails);
+    Manager updateManager(Long id, Manager managerDetails);
 
     // Delete manager
-    void deleteManager(Long managerId);
+    void deleteManager(Long id);
 
     // Get all managers
     List<Manager> getAllManagers();

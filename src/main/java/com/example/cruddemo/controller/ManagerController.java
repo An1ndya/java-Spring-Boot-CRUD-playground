@@ -26,10 +26,9 @@ public class ManagerController {
 
     @PostMapping
     public ResponseEntity<Manager> createManager(@Valid @RequestBody Manager manager) {
-        log.info("Creating new manager: {} {} with salary: {}", 
+        log.info("Creating new manager: {} {}", 
                 manager.getFirstName(), 
-                manager.getLastName(), 
-                manager.getSalary());
+                manager.getLastName());
         return new ResponseEntity<>(managerService.createManager(manager), HttpStatus.CREATED);
     }
 

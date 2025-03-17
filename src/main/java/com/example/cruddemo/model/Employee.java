@@ -48,6 +48,10 @@ public class Employee implements Serializable {
     @Column
     private Double salary;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "manager_id", nullable = true)
+    private Manager manager;
+
     // Getters and Setters
     public Long getId() {
         return id;
@@ -103,5 +107,13 @@ public class Employee implements Serializable {
 
     public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public Manager getManager() {
+        return manager;
+    }
+
+    public void setManager(Manager manager) {
+        this.manager = manager;
     }
 }

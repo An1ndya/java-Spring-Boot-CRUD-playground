@@ -5,8 +5,6 @@ import com.example.cruddemo.model.Manager;
 import com.example.cruddemo.repository.ManagerRepository;
 import com.example.cruddemo.service.ManagerService;
 import com.example.cruddemo.util.AppLogger;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,15 +12,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Slf4j
 public class ManagerServiceImpl implements ManagerService {
 
     private final ManagerRepository managerRepository;
 
-    @Autowired
     public ManagerServiceImpl(ManagerRepository managerRepository) {
         this.managerRepository = managerRepository;
-        AppLogger.log1Info("ManagerServiceImpl initialized with repository");
     }
 
     @Override
@@ -33,16 +28,24 @@ public class ManagerServiceImpl implements ManagerService {
     }
 
     @Override
-    public Optional<Manager> getManagerById(Long managerId) {
-        AppLogger.log1Info("Fetching manager with ID: " + managerId);
-        return managerRepository.findById(managerId);
+    @Transactional(readOnly = true)
+    public List<Manager> getAllManagers() {
+        AppLogger.log1Info("Fetching all managers");
+        return managerRepository.findAll();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Optional<Manager> getManagerById(Long id) {
+        AppLogger.log1Info("Fetching manager with ID: " + id);
+        return managerRepository.findById(id);
     }
 
     @Override
     @Transactional
-    public Manager updateManager(Long managerId, Manager managerDetails) {
-        Manager existingManager = managerRepository.findById(managerId)
-                .orElseThrow(() -> new ResourceNotFoundException("Manager not found with id: " + managerId));
+    public Manager updateManager(Long id, Manager managerDetails) {
+        Manager existingManager = managerRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Manager not found with id: " + id));
 
         // Update manager details
         existingManager.setFirstName(managerDetails.getFirstName());
@@ -51,23 +54,17 @@ public class ManagerServiceImpl implements ManagerService {
         existingManager.setPhoneNumber(managerDetails.getPhoneNumber());
         existingManager.setSalary(managerDetails.getSalary());
 
-        AppLogger.log1Info("Updating manager with ID: " + managerId);
+        AppLogger.log1Info("Updating manager with ID: " + id);
         return managerRepository.save(existingManager);
     }
 
     @Override
     @Transactional
-    public void deleteManager(Long managerId) {
-        Manager manager = managerRepository.findById(managerId)
-                .orElseThrow(() -> new ResourceNotFoundException("Manager not found with id: " + managerId));
+    public void deleteManager(Long id) {
+        Manager manager = managerRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Manager not found with id: " + id));
 
-        AppLogger.log1Info("Deleting manager with ID: " + managerId);
+        AppLogger.log1Info("Deleting manager with ID: " + id);
         managerRepository.delete(manager);
-    }
-
-    @Override
-    public List<Manager> getAllManagers() {
-        AppLogger.log1Info("Fetching all managers");
-        return managerRepository.findAll();
     }
 }
