@@ -5,3 +5,9 @@
 2025-03-17 11:07:55 [http-nio-8080-exec-2] INFO  log2 - Service: Found 12 employees
 2025-03-17 11:51:35 [http-nio-8080-exec-3] INFO  log2 - Service: Found 12 employees
 2025-03-17 11:53:38 [http-nio-8080-exec-4] INFO  log2 - Service: Found employee: john.doe@example.com
+2025-03-17 11:58:02 [http-nio-8080-exec-6] INFO  log2 - Service: Found employee: john.doe@example.com
+2025-03-17 12:05:29 [http-nio-8080-exec-9] INFO  log2 - Employee update details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567, position=Software Engineer, salary=75000.0, manager=Manager(managerId=null, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-17 12:05:29 [http-nio-8080-exec-9] INFO  log2 - Successfully updated employee with ID: 1
+2025-03-17 12:05:40 [http-nio-8080-exec-5] INFO  log2 - Service: Found employee: john.doe@example.com
+2025-03-17 12:06:12 [http-nio-8080-exec-1] INFO  log2 - Employee update details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567, position=Software Engineer, salary=75000.0, manager=Manager(managerId=null, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-17 12:06:12 [http-nio-8080-exec-1] INFO  log2 - Successfully updated employee with ID: 1

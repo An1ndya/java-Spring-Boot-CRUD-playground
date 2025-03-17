@@ -303,6 +303,10 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (updateDetails.getSalary() != null) {
             existingEmployee.setSalary(updateDetails.getSalary());
         }
+        // Add support for updating manager
+        if (updateDetails.getManager() != null) {
+            existingEmployee.setManager(updateDetails.getManager());
+        }
     }
 
     /**

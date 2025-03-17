@@ -283,3 +283,16 @@ Caused by: org.hibernate.MappingException: Unable to find column with logical na
 2025-03-17 11:53:38 [http-nio-8080-exec-4] INFO  log1 - Fetching employee with ID: 1
 2025-03-17 11:53:38 [http-nio-8080-exec-4] INFO  log1 - Service: Getting employee with ID: 1
 2025-03-17 11:53:38 [http-nio-8080-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 11:58:01 [http-nio-8080-exec-6] INFO  log1 - Fetching employee with ID: 1
+2025-03-17 11:58:01 [http-nio-8080-exec-6] INFO  log1 - Service: Getting employee with ID: 1
+2025-03-17 11:58:01 [http-nio-8080-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 11:58:11 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.cruddemo.model.Manager` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.cruddemo.model.Manager` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 20] (through reference chain: com.example.cruddemo.model.Employee["manager"])]
+2025-03-17 12:05:29 [http-nio-8080-exec-9] INFO  log1 - Updating employee with ID: 1
+2025-03-17 12:05:29 [http-nio-8080-exec-9] INFO  log1 - Service: Attempting to update employee with ID: 1
+2025-03-17 12:05:29 [http-nio-8080-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 12:05:40 [http-nio-8080-exec-5] INFO  log1 - Fetching employee with ID: 1
+2025-03-17 12:05:40 [http-nio-8080-exec-5] INFO  log1 - Service: Getting employee with ID: 1
+2025-03-17 12:05:40 [http-nio-8080-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-03-17 12:06:12 [http-nio-8080-exec-1] INFO  log1 - Updating employee with ID: 1
+2025-03-17 12:06:12 [http-nio-8080-exec-1] INFO  log1 - Service: Attempting to update employee with ID: 1
+2025-03-17 12:06:12 [http-nio-8080-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
