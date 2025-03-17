@@ -52,7 +52,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     
     // Manager repository for manager updates
     private final ManagerRepository managerRepository;
-
+    
+    // Hibernate session for stored procedure calls
+    @Autowired
     private Session session;
 
     /**
@@ -113,7 +115,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         try {
             // Validate input
             validateEmployeeInput(employee);
-            session.beginTransaction();
+            //session.beginTransaction(); // This create error as shared entity manager
             
             StoredProcedureQuery query = session.createStoredProcedureQuery("sp_insert_employee", Employee.class)
                     .registerStoredProcedureParameter("first_name_param", String.class, ParameterMode.IN)
@@ -131,7 +133,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             
             // Execute the stored procedure
             query.execute();
-            session.getTransaction().commit();
+            //session.getTransaction().commit();
             
             // Retrieve the inserted employee
             Object queryObject = query.getSingleResult();
