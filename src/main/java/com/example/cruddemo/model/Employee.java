@@ -116,4 +116,8 @@ public class Employee implements Serializable {
     public void setManager(Manager manager) {
         this.manager = manager;
     }
+
+    public Long getManagerId() {
+        return manager != null ? manager.getId() : null;
+    }
 }

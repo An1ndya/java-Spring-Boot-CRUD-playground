@@ -124,12 +124,14 @@ public class EmployeeServiceImpl implements EmployeeService {
                     .registerStoredProcedureParameter("phone_number_param", String.class, ParameterMode.IN)
                     .registerStoredProcedureParameter("position_param", String.class, ParameterMode.IN)
                     .registerStoredProcedureParameter("salary_param", BigDecimal.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("manager_id_param", Long.class, ParameterMode.IN)  // New parameter for manager ID
                     .setParameter("first_name_param", employee.getFirstName())
                     .setParameter("last_name_param", employee.getLastName())
                     .setParameter("email_param", employee.getEmail())
                     .setParameter("phone_number_param", employee.getPhoneNumber())
                     .setParameter("position_param", employee.getPosition())
-                    .setParameter("salary_param", BigDecimal.valueOf(employee.getSalary()));
+                    .setParameter("salary_param", BigDecimal.valueOf(employee.getSalary()))
+                    .setParameter("manager_id_param", employee.getManagerId());  
             
             // Execute the stored procedure
             query.execute();
