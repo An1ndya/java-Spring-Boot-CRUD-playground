@@ -159,4 +159,35 @@ public class EmployeeController {
         log.debug("Found Employee with id: {}", employee.getId());
         return ResponseEntity.ok(employee);
     }
+
+    /**
+     * Find high-paid employees endpoint
+     * @param salaryThreshold The salary threshold to filter employees
+     * @return List of names of high-paid employees
+     */
+    @GetMapping("/high-paid")
+    public ResponseEntity<List<String>> getHighPaidEmployeeNames(
+            @RequestParam(value = "threshold", defaultValue = "50000.0") Double salaryThreshold) {
+        log.info("REST request to get high-paid employee names with threshold: {}", salaryThreshold);
+        
+        List<String> highPaidEmployeeNames = employeeService.findHighPaidEmployeeNames(salaryThreshold);
+        log.debug("Found {} high-paid employees", highPaidEmployeeNames.size());
+        
+        return ResponseEntity.ok(highPaidEmployeeNames);
+    }
+
+    /**
+     * Find the highest paid employee endpoint
+     * @return The employee with the highest salary
+     */
+    @GetMapping("/highest-paid")
+    public ResponseEntity<Employee> getHighestPaidEmployee() {
+        log.info("REST request to get highest paid employee");
+        
+        Employee highestPaidEmployee = employeeService.findHighestPaidEmployee()
+            .orElseThrow(() -> new ResourceNotFoundException("No employees found"));
+        
+        log.debug("Highest paid employee found: {}", highestPaidEmployee.getFullName());
+        return ResponseEntity.ok(highestPaidEmployee);
+    }
 }
