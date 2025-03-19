@@ -9,9 +9,18 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Optional;
+import java.util.function.Predicate;
 
 @Entity
 @Table(name = "employees")
+@NamedQueries({
+    @NamedQuery(name = "Employee.findByPosition", 
+                query = "FROM Employee e WHERE e.position = :position"),
+    @NamedQuery(name = "Employee.findHighPaidEmployees", 
+                query = "FROM Employee e WHERE e.salary > :salaryThreshold")
+})
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -48,8 +57,11 @@ public class Employee implements Serializable {
     @Column
     private Double salary;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "manager_id", nullable = true, referencedColumnName = "manager_id")
+    @Column(name = "manager_id", insertable = false, updatable = false)
+    private Long managerId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "manager_id", referencedColumnName = "manager_id")
     private Manager manager;
 
     // Getters and Setters
@@ -106,11 +118,11 @@ public class Employee implements Serializable {
     }
 
     public void setSalary(Double salary) {
-        this.salary = salary;
+        this.salary = salary != null ? salary.doubleValue() : null;
     }
 
     public Manager getManager() {
-        return manager;
+        return this.manager;
     }
 
     public void setManager(Manager manager) {
@@ -118,6 +130,32 @@ public class Employee implements Serializable {
     }
 
     public Long getManagerId() {
-        return manager != null ? manager.getId() : null;
+        return this.manager != null ? this.manager.getId() : null;
     }
+
+    public void setManagerId(Long managerId) {
+        if (this.manager == null) {
+            this.manager = new Manager();
+        }
+        this.manager.setId(managerId);
+    }
+
+    // Method to get full name
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
+    // Java 8 Functional Interface Methods
+    public boolean isHighEarner(BigDecimal threshold) {
+        return Optional.ofNullable(this.salary)
+            .map(sal -> sal.compareTo(threshold.doubleValue()) > 0)
+            .orElse(false);
+    }
+
+    // Lambda-based filter predicate
+    public static Predicate<Employee> salaryFilter(BigDecimal threshold) {
+        return employee -> employee.isHighEarner(threshold);
+    }
+
+
 }

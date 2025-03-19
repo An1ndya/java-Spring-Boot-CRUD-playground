@@ -22,4 +22,13 @@ public interface EmployeeService {
     List<Employee> findByPosition(String position);
     
     Employee findByEmail(String email);
+
+    // New method signatures
+    List<String> findHighPaidEmployeeNames(Double salaryThreshold);
+
+    Optional<Employee> findHighestPaidEmployee();
+
+    Employee updateEmployeeSalaryAndPosition(Long employeeId, Double newSalary, String newPosition);
+
+    List<String> findEmployeesUnderManager(Long managerId);
 }

@@ -15,6 +15,7 @@ import org.hibernate.exception.LockAcquisitionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.QueryHints;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,9 +33,11 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.sql.SQLException;
+import java.util.Comparator;
 import java.util.ConcurrentModificationException;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * Implementation of the EmployeeService interface.
@@ -440,5 +443,45 @@ public class EmployeeServiceImpl implements EmployeeService {
             AppLogger.log1Error("Error mapping query result to entity: {}", e.getMessage());
             throw new IllegalArgumentException("Failed to map query result to entity: " + e.getMessage(), e);
         }
+    }
+
+    // Advanced method using Java 8 Streams and Optional
+    @Override
+    @Transactional(readOnly = true)
+    public List<String> findHighPaidEmployeeNames(Double salaryThreshold) {
+        return employeeRepository.findHighPaidEmployees(salaryThreshold).stream()
+            .map(Employee::getFullName)
+            .collect(Collectors.toList());
+    }
+
+    // Method to find highest paid employee with Optional
+    @Override
+    @Transactional(readOnly = true)
+    public Optional<Employee> findHighestPaidEmployee() {
+        return employeeRepository.findAll().stream()
+            .max(Comparator.comparing(Employee::getSalary));
+    }
+
+    // Session management enhanced method
+    @Override
+    @Transactional
+    public Employee updateEmployeeSalaryAndPosition(Long employeeId, Double newSalary, String newPosition) {
+        Employee employee = employeeRepository.findById(employeeId)
+            .orElseThrow(() -> new ResourceNotFoundException("Employee not found"));
+        
+        // Demonstrate functional update
+        Optional.ofNullable(newSalary).ifPresent(employee::setSalary);
+        Optional.ofNullable(newPosition).ifPresent(employee::setPosition);
+        
+        return employeeRepository.save(employee);
+    }
+
+    // Complex query with functional processing
+    @Override
+    @Transactional(readOnly = true)
+    public List<String> findEmployeesUnderManager(Long managerId) {
+        return employeeRepository.findByManagerId(managerId).stream()
+            .map(Employee::getFullName)
+            .collect(Collectors.toList());
     }
 }
