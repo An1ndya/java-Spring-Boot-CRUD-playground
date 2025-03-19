@@ -16,3 +16,4 @@
 2025-03-19 14:01:22 [http-nio-8080-exec-2] INFO  log2 - Updating employee with manager ID: 4
 2025-03-19 14:01:22 [http-nio-8080-exec-2] INFO  log2 - Successfully updated employee with ID: 41
 2025-03-19 14:01:33 [http-nio-8080-exec-1] INFO  log2 - Service: Found employee: michael1gg@example.com
+2025-03-19 14:14:03 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings

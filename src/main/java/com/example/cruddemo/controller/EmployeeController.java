@@ -190,4 +190,19 @@ public class EmployeeController {
         log.debug("Highest paid employee found: {}", highestPaidEmployee.getFullName());
         return ResponseEntity.ok(highestPaidEmployee);
     }
+
+    /**
+     * Find employees under a specific manager endpoint
+     * @param managerId The ID of the manager
+     * @return List of full names of employees under the manager
+     */
+    @GetMapping("/under-manager/{managerId}")
+    public ResponseEntity<List<String>> getEmployeesUnderManager(@PathVariable Long managerId) {
+        log.info("REST request to get employees under manager with ID: {}", managerId);
+        
+        List<String> employeesUnderManager = employeeService.findEmployeesUnderManager(managerId);
+        log.debug("Found {} employees under manager", employeesUnderManager.size());
+        
+        return ResponseEntity.ok(employeesUnderManager);
+    }
 }
