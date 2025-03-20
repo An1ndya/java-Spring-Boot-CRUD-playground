@@ -445,6 +445,18 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
+    /**
+     * Calculate total salary of all employees using reduce
+     * @return Total salary of all employees
+     */
+    //@Override
+   // @Transactional(readOnly = true)
+    public Double calculateTotalSalary() {
+        return employeeRepository.findAll().stream()
+            .map(Employee::getSalary)
+            .reduce(0.0, Double::sum);
+    }
+
     // Advanced method using Java 8 Streams and Optional
     @Override
     @Transactional(readOnly = true)

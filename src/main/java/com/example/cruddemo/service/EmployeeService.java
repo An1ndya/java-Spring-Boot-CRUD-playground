@@ -31,4 +31,6 @@ public interface EmployeeService {
     Employee updateEmployeeSalaryAndPosition(Long employeeId, Double newSalary, String newPosition);
 
     List<String> findEmployeesUnderManager(Long managerId);
+
+    Double calculateTotalSalary();
 }

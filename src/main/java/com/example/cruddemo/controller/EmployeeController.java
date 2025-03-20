@@ -205,4 +205,14 @@ public class EmployeeController {
         
         return ResponseEntity.ok(employeesUnderManager);
     }
+
+    /**
+     * Get the total salary of all employees
+     * @return Total salary as a ResponseEntity
+     */
+    @GetMapping("/total-salary")
+    public ResponseEntity<Double> getTotalSalary() {
+        Double totalSalary = employeeService.calculateTotalSalary();
+        return ResponseEntity.ok(totalSalary);
+    }
 }
