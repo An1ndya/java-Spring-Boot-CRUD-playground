@@ -28,21 +28,11 @@ public class CrudDemoApplication {
 			if (activeProfiles.length == 0) {
 				AppLogger.log1Info("Running with default profile (no active profile set)");
 			} else {
-				for (String profile : activeProfiles) {
-					AppLogger.log1Info("Running with active profile: " + profile);
-				}
+				AppLogger.log1Info("Active Profiles: " + String.join(", ", activeProfiles));
 			}
 			
-			// Log database connection info
-			AppLogger.log1Info("Database URL: " + environment.getProperty("spring.datasource.url"));
-			AppLogger.log1Info("Server Port: " + environment.getProperty("server.port"));
-			
-			// Additional environment-specific logging
-			if (environment.matchesProfiles("dev")) {
-				AppLogger.log2Info("DEVELOPMENT MODE: Additional debugging enabled");
-			} else if (environment.matchesProfiles("prod")) {
-				AppLogger.log2Info("PRODUCTION MODE: Running with optimized settings");
-			}
+			// Optional: Add a log to indicate the application is ready
+			AppLogger.log1Info("CrudDemoApplication is fully initialized and ready.");
 		};
 	}
 }

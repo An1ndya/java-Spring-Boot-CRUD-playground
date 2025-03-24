@@ -157,5 +157,16 @@ public class Employee implements Serializable {
         return employee -> employee.isHighEarner(threshold);
     }
 
+    public Employee(Object object, String string, String string2, String string3, String string4, double d,
+            String string5) {
+        this.firstName = string;
+        this.lastName = string2;
+        this.email = string3;
+        this.position = string4;
+        this.phoneNumber = string5;
+        this.salary = d;
+        //this.managerId = Long.valueOf(string6);
+    }
+
 
 }

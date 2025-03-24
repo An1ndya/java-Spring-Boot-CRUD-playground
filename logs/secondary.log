@@ -1,1 +1,22 @@
-2025-03-20 15:13:02 [restartedMain] INFO  log2 - PRODUCTION MODE: Running with optimized settings
+2025-03-24 12:11:21 [http-nio-8080-exec-1] INFO  log2 - Service: Found 23 employees
+2025-03-24 12:11:22 [http-nio-8080-exec-5] INFO  log2 - Service: Found 23 employees
+2025-03-24 13:03:29 [http-nio-8080-exec-4] INFO  log2 - Service: Found 23 employees
+2025-03-24 13:04:31 [http-nio-8080-exec-9] INFO  log2 - Service: Found 23 employees
+2025-03-24 13:06:07 [http-nio-8080-exec-1] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567, position=Junior Engineer, salary=69000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:06:07 [http-nio-8080-exec-1] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567, position=Junior Engineer, salary=69000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:06:41 [http-nio-8080-exec-7] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567, position=Junior Engineer, salary=69000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:06:41 [http-nio-8080-exec-7] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe@example.com, phoneNumber=555-123-4567, position=Junior Engineer, salary=69000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:06:51 [http-nio-8080-exec-4] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe5454@example.com, phoneNumber=555-123-4567, position=Junior Engineer, salary=69000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:06:51 [http-nio-8080-exec-4] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe5454@example.com, phoneNumber=555-123-4567, position=Junior Engineer, salary=69000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:06:51 [http-nio-8080-exec-4] INFO  log2 - Successfully mapped query result to Employee
+2025-03-24 13:07:22 [http-nio-8080-exec-3] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe5454@example.com, phoneNumber=555-123-4567, position=Senior Engineer, salary=99000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:07:22 [http-nio-8080-exec-3] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe5454@example.com, phoneNumber=555-123-4567, position=Senior Engineer, salary=99000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:07:27 [http-nio-8080-exec-9] INFO  log2 - Employee creation details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe544@example.com, phoneNumber=555-123-4567, position=Senior Engineer, salary=99000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:07:27 [http-nio-8080-exec-9] INFO  log2 - Service: Full employee details: Employee(id=null, firstName=John, lastName=Doe, email=john.doe544@example.com, phoneNumber=555-123-4567, position=Senior Engineer, salary=99000.0, managerId=1, manager=Manager(id=1, firstName=null, lastName=null, email=null, phoneNumber=null, salary=null, employees=[]))
+2025-03-24 13:07:27 [http-nio-8080-exec-9] INFO  log2 - Successfully mapped query result to Employee
+2025-03-24 13:08:41 [http-nio-8080-exec-10] INFO  log2 - Service: Found 25 employees
+2025-03-24 13:08:42 [http-nio-8080-exec-1] INFO  log2 - Service: Found 25 employees
+2025-03-24 13:08:42 [http-nio-8080-exec-5] INFO  log2 - Service: Found 25 employees
+2025-03-24 13:08:43 [http-nio-8080-exec-7] INFO  log2 - Service: Found 25 employees
+2025-03-24 13:30:14 [http-nio-8080-exec-6] INFO  log2 - Service: Found 25 employees
+2025-03-24 13:30:27 [http-nio-8080-exec-1] INFO  log2 - Service: Found 25 employees
